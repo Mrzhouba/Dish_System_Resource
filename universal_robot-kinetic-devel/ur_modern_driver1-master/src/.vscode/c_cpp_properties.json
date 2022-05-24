@@ -1,0 +1,45 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/robot/catkin_ws/devel/include/**",
+        "/opt/ros/kinetic/include/**",
+        "/home/robot/catkin_ws/src/aruco_ros-kinetic-devel/aruco/include/**",
+        "/home/robot/catkin_ws/src/aruco_ros-kinetic-devel/aruco_ros/include/**",
+        "/home/robot/catkin_ws/src/realsense-ros-development/ddynamic_reconfigure-kinetic-devel/include/**",
+        "/home/robot/catkin_ws/src/image_pipeline-kinetic/depth_image_proc/include/**",
+        "/home/robot/catkin_ws/src/dh_hand_driver/include/**",
+        "/home/robot/catkin_ws/src/dual_arm_car_grippers_modern_driver/include/**",
+        "/home/robot/catkin_ws/src/yumi-master/gazebo_mimic/include/**",
+        "/home/robot/catkin_ws/src/image_pipeline-kinetic/image_proc/include/**",
+        "/home/robot/catkin_ws/src/PROBOT_Anno-master/probot_anno_ikfast_manipulator_plugin/include/**",
+        "/home/robot/catkin_ws/src/PROBOT_Anno-master/probot_grasping/include/**",
+        "/home/robot/catkin_ws/src/realsense-ros-development/realsense2_camera/include/**",
+        "/home/robot/catkin_ws/src/robot_order/include/**",
+        "/home/robot/catkin_ws/src/robotiq-kinetic-devel/robotiq_2f_gripper_action_server/include/**",
+        "/home/robot/catkin_ws/src/robotiq-kinetic-devel/robotiq_2f_gripper_control/include/**",
+        "/home/robot/catkin_ws/src/robotiq-kinetic-devel/robotiq_3f_gripper_articulated_gazebo_plugins/include/**",
+        "/home/robot/catkin_ws/src/robotiq-kinetic-devel/robotiq_3f_gripper_control/include/**",
+        "/home/robot/catkin_ws/src/robotiq-kinetic-devel/robotiq_ethercat/include/**",
+        "/home/robot/catkin_ws/src/robotiq-kinetic-devel/robotiq_ft_sensor/include/**",
+        "/home/robot/catkin_ws/src/sd700e_control/include/**",
+        "/home/robot/catkin_ws/src/image_pipeline-kinetic/stereo_image_proc/include/**",
+        "/home/robot/catkin_ws/src/ur3ur10_modern_driver/include/**",
+        "/home/robot/catkin_ws/src/ur3ur10car_modern_driver/include/**",
+        "/home/robot/catkin_ws/src/universal_robot-kinetic-devel/ur_kinematics/include/**",
+        "/home/robot/catkin_ws/src/universal_robot-kinetic-devel/ur_modern_driver-master/include/**",
+        "/home/robot/catkin_ws/src/usb_cam-develop/include/**",
+        "/home/robot/catkin_ws/src/vision_visp-kinetic-devel/visp_bridge/include/**",
+        "/home/robot/catkin_ws/src/yumi-master/yumi_hw/include/**",
+        "/home/robot/catkin_ws/src/yumi-master/yumi_test_controllers/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

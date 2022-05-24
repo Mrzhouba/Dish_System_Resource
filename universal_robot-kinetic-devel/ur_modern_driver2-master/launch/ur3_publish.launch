@@ -1,0 +1,24 @@
+<launch>
+    <!-- 启动AG-95控制节点 -->
+    <!-- <include file="$(find dh_hand_driver)/launch/dh_hand_controller.launch" /> -->
+    
+    <!-- 连接UR3机械臂 -->
+    <include file="$(find ur_modern_driver1)/launch/ur3_bringup.launch">
+    <arg name="robot_ip" default="192.168.20.185"/>
+    </include>
+
+    <!-- 启动机械臂路径规划 -->
+    <include file="$(find ur3_moveit_config)/launch/ur3_moveit_planning_execution.launch" >
+    <arg name="limited" default="true"/>
+    </include>
+
+    <!-- 启动机械臂可视化界面 -->
+    <include file="$(find ur3_moveit_config)/launch/moveit_rviz.launch">
+    <arg name="config" default="true"/>
+    </include>
+
+    <!-- 发布机械臂从base_link到camera_link的坐标转换 -->
+    <include file="$(find easy_handeye)/launch/publish.launch" />
+
+
+</launch>

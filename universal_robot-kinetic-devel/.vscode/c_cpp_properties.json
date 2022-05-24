@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/cqy/catkin_ws/devel/include/**",
+                "/opt/ros/kinetic/include/**",
+                "/home/cqy/catkin_ws/src/realsense-ros-development/ddynamic_reconfigure-kinetic-devel/include/**",
+                "/home/cqy/catkin_ws/src/dh_hand_driver/include/**",
+                "/home/cqy/catkin_ws/src/probot_anno_ikfast_manipulator_plugin/include/**",
+                "/home/cqy/catkin_ws/src/probot_grasping/include/**",
+                "/home/cqy/catkin_ws/src/realsense-ros-development/realsense2_camera/include/**",
+                "/home/cqy/catkin_ws/src/robotiq/robotiq_gazebo/include/**",
+                "/home/cqy/catkin_ws/src/sd700e_control/include/**",
+                "/home/cqy/catkin_ws/src/universal_robot-kinetic-devel/ur_kinematics/include/**",
+                "/home/cqy/catkin_ws/src/universal_robot-kinetic-devel/ur_modern_driver-master/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

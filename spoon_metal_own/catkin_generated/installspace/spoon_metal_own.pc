@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: spoon_metal_own
+Description: Description of spoon_metal_own
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

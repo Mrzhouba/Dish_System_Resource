@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="spoon_metal_own">
+  <link
+    name="spoon_base_link">
+    <inertial>
+      <origin
+        xyz="-0.045836 -3.8109E-06 0.028802"
+        rpy="0 0 0" />
+      <mass
+        value="0.068874" />
+      <inertia
+        ixx="8.2579E-05"
+        ixy="-4.8961E-09"
+        ixz="3.4903E-05"
+        iyy="0.00012288"
+        iyz="6.5831E-09"
+        izz="7.4432E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spoon_metal_own/meshes/spoon_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spoon_metal_own/meshes/spoon_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="spoon_body">
+    <inertial>
+      <origin
+        xyz="-0.00041746 0.22889 0.14202"
+        rpy="0 0 0" />
+      <mass
+        value="0.12138" />
+      <inertia
+        ixx="0.0014566"
+        ixy="-7.3538E-11"
+        ixz="2.3854E-12"
+        iyy="0.00053013"
+        iyz="-0.00066462"
+        izz="0.00099762" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spoon_metal_own/meshes/spoon_body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://spoon_metal_own/meshes/spoon_body.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="spoon_joint"
+    type="fixed">
+    <origin
+      xyz="0.0248 -0.00086523 0.4253"
+      rpy="-2.2166 0 -1.5708" />
+    <parent
+      link="spoon_base_link" />
+    <child
+      link="spoon_body" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

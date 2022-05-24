@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ur3ur10car
+    relative_path: urdf/ur3_gripper_with_car.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/dual_arm_robot_car_grippers.srdf
+  CONFIG:
+    author_name: fs
+    author_email: sfd@163.com
+    generated_timestamp: 1622534517

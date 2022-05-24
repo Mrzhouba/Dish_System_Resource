@@ -1,0 +1,18 @@
+<launch>
+    <!-- 启动ur3gazebo -->
+    <include file="$(find ur_gazebo)/launch/ur3.launch">
+    <arg name="limited" default="true"/>
+    </include>    
+
+    <!-- 启动机械臂路径规划 -->
+    <include file="$(find ur3_moveit_config)/launch/ur3_moveit_planning_execution.launch" >
+    <arg name="sim" default="true"/>
+    <arg name="limited" default="true"/>
+    </include>
+
+    <!-- 启动机械臂可视化界面 -->
+    <include file="$(find ur3_moveit_config)/launch/moveit_rviz.launch">
+    <arg name="config" default="true"/>
+    </include>
+
+</launch>
