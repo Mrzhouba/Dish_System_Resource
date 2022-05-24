@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: ur3ur10car
+Description: Description of ur3ur10car
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

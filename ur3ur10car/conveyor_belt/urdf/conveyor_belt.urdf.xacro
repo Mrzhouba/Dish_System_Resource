@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot xmlns:xacro="http://wiki.ros.org/xacro"
+       name="conveyor_belt">
+  <link
+    name="conveyor_belt">
+    <inertial>
+      <origin
+        xyz="1.0468 -0.083279 -0.1994"
+        rpy="0 0 0" />
+      <mass
+        value="68.822" />
+      <inertia
+        ixx="2.5615"
+        ixy="-0.071915"
+        ixz="0.000879579999999996"
+        iyy="32.429"
+        iyz="-0.013471"
+        izz="32.813" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur3ur10car/conveyor_belt/meshes/conveyor_belt.STL" />
+      </geometry>
+      <material
+        name="green">
+        <color
+          rgba="0 0.8 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ur3ur10car/conveyor_belt/meshes/conveyor_belt.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

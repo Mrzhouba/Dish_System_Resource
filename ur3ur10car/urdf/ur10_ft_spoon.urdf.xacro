@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro"
+       name="dual_arm_robot_car_grippers">
+
+  <xacro:property name="pi" value="3.1415926535897931"/>
+
+  <xacro:arg name="prefix_ur10" default="ur10_"/>
+
+  <xacro:arg name="limited_ur10" default="true"/>
+
+  <!-- common stuff -->
+  <xacro:include filename="$(find ur_description)/urdf/common.gazebo.xacro"/>
+
+
+  <!-- ur10 -->
+  <xacro:include filename="$(find ur3ur10car)/urdf/ur10.urdf.xacro"/> <!-- original file has been edited because of same variable names in ur3 and ur10 -->
+  <xacro:include filename="$(find spoon_metal_own)/urdf/spoon_metal_own.urdf.xacro"/>
+  <xacro:include filename="$(find FTS300)/urdf/FTS300.urdf.xacro"/>
+
+  <xacro:include filename="$(find realsense2_description)/urdf/test_d435_camera.urdf.xacro"/>
+	
+
+  <!-- place ur10 arm -->
+  <xacro:ur10_robot prefix="$(arg prefix_ur10)" joint_limited="$(arg limited_ur10)"/>
+
+  <link name="body_link"/>
+  <joint name="$(arg prefix_ur10)platform_mount" type="fixed">
+    <parent link="body_link"/>
+    <child link ="$(arg prefix_ur10)base_link"/>
+    <origin xyz="0.37 0.0 0.40" rpy="0 0 ${-pi/2.0}" />
+  </joint>
+
+  <joint name="spoon" type="fixed">
+    <parent link="ft300_body_link"/>
+    <child link ="spoon_base_link"/>
+    <origin xyz="0 0 0.001" rpy="0 0 ${-pi/4.0}" />
+  </joint>
+
+<!--<origin xyz="0 0 0" rpy="${-pi/2.0} ${3*pi/4.0} ${-pi/2.0}" /> -->
+
+  <joint name="ft_sensor" type="fixed">
+    <parent link="$(arg prefix_ur10)ee_link"/>
+    <child link ="ft300_base_link"/>
+    <origin xyz="0 0 0.004" rpy="${pi/2.0} 0 ${pi/2.0}" />
+  </joint>
+
+  <joint name="realsense_d435" type="fixed">
+    <parent link="spoon_base_link"/>
+    <child link ="realsense_d435_base_link"/>
+    <origin xyz="-0.072 0 0.09" rpy="${-pi} ${-pi/2.0} ${pi}" />
+  </joint>
+
+
+
+  <!--<joint name="conveyor_belt" type="fixed">
+    <parent link="body_link"/>
+    <child link ="conveyor_belt"/>
+    <origin xyz="-0.77 -0.79 0.65" rpy="${pi/2.0} 0 0" />
+  </joint>-->
+
+ <!-- <joint name="bowl" type="fixed">
+    <parent link="body_link"/>
+    <child link ="bowl"/>
+    <origin xyz="-0.925 0 0.88" rpy="0 0 0" />
+  </joint>-->
+
+  <!--<joint name="bowl_copy" type="fixed">
+    <parent link="grip_tip_link"/>
+    <child link ="bowl"/>
+    <origin xyz="0 0 0" rpy="${pi/2.0} 0 0" />
+  </joint>-->
+
+
+  <!-- place ur10 endeffector -->
+  <!-- <xacro:endeffector prefix="$(arg prefix_ur10)"/>
+  <joint name="$(arg prefix_ur10)ee_mount" type="fixed">
+    <parent link="$(arg prefix_ur10)ee_link" />
+    <child link = "$(arg prefix_ur10)ee_frame" />
+    <origin xyz="0.0 0.0 0.0" rpy="${pi/2.0} 0.0 ${pi/2.0}" />
+  </joint> -->
+<!--
+  <joint name="$(arg prefix_ur10)ee_mount" type="fixed">
+    <parent link="$(arg prefix_ur10)tool0"/>
+    <child link ="$(arg prefix_ur10)ee_frame"/>
+    <origin xyz="0 0 0" rpy="0 0 ${pi}" />
+  </joint>
+-->
+
+
+
+
+
+</robot>
