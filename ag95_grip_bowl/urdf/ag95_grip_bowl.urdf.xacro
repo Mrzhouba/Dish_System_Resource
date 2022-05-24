@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro"
+       name="ag95_grip_bowl">
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+
+  <link
+    name="ag95_grip_base_link">
+    <inertial>
+      <origin
+        xyz="2.0713E-10 2.0278E-05 0.088235"
+        rpy="0 0 0" />
+      <mass
+        value="0.11208" />
+      <inertia
+        ixx="2.9697E-05"
+        ixy="-3.6572E-13"
+        ixz="2.9903E-15"
+        iyy="3.7674E-05"
+        iyz="3.3862E-09"
+        izz="4.0516E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ag95_grip_bowl/meshes/ag95_grip_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ag95_grip_bowl/meshes/ag95_grip_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="grip_tip_link">
+    <inertial>
+      <origin
+        xyz="0.0012187 -8.2438E-06 -0.032093"
+        rpy="0 0 0" />
+      <mass
+        value="0.024379" />
+      <inertia
+        ixx="4.7514E-05"
+        ixy="8.2047E-13"
+        ixz="5.0873E-07"
+        iyy="5.6442E-05"
+        iyz="-5.2306E-14"
+        izz="9.9339E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ag95_grip_bowl/meshes/grip_tip_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ag95_grip_bowl/meshes/grip_tip_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="grip_tip_joint"
+    type="fixed">
+    <origin
+      xyz="-0.0011904 0 0.23817"
+      rpy="0 0.027068 0" />
+    <parent
+      link="ag95_grip_base_link" />
+    <child
+      link="grip_tip_link" />
+    <axis
+      xyz="0.99963 0 0.027064" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

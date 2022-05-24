@@ -1,0 +1,421 @@
+2021-05-13 14:05:33,095 INFO  Logger.cs: 70 - 
+--------------------------------------------------------------------------------
+2021-05-13 14:05:33,119 INFO  Logger.cs: 71 - Logging commencing for SW2URDF exporter
+2021-05-13 14:05:33,121 INFO  Logger.cs: 73 - Commit version 1.5.1-0-g916b5db
+2021-05-13 14:05:33,121 INFO  Logger.cs: 74 - Build version 1.5.7152.31018
+2021-05-13 14:05:33,145 INFO  SwAddin.cs: 250 - Adding Assembly export to file menu
+2021-05-13 14:05:33,146 INFO  SwAddin.cs: 253 - Adding Part export to file menu
+2021-05-13 14:05:33,161 INFO  SwAddin.cs: 218 - Connecting plugin to SolidWorks
+2021-05-13 15:00:44,154 INFO  SwAddin.cs: 271 - Assembly export called for file ag95_grip_bowl.SLDASM
+2021-05-13 15:00:44,155 INFO  SwAddin.cs: 276 - Save is required
+2021-05-13 15:00:44,157 INFO  SwAddin.cs: 290 - Saving assembly
+2021-05-13 15:00:44,523 INFO  SwAddin.cs: 293 - Opening property manager
+2021-05-13 15:00:44,558 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from ag95_grip_bowl.SLDASM
+2021-05-13 15:00:44,570 INFO  ExportHelperExtension.cs: 1142 - Found 62 in ag95_grip_bowl.SLDASM
+2021-05-13 15:00:44,570 INFO  ExportHelperExtension.cs: 1152 - Found 2 features of type [CoordSys] in ag95_grip_bowl.SLDASM
+2021-05-13 15:00:44,571 INFO  ExportHelperExtension.cs: 1155 - Proceeding through assembly components
+2021-05-13 15:00:44,585 INFO  ExportHelperExtension.cs: 1167 - 24 components to check
+2021-05-13 15:00:44,586 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from 夹碗模型-1
+2021-05-13 15:00:44,587 INFO  ExportHelperExtension.cs: 1142 - Found 35 in 夹碗模型-1
+2021-05-13 15:00:44,587 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in 夹碗模型-1
+2021-05-13 15:00:44,587 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from A.step-1
+2021-05-13 15:00:44,588 INFO  ExportHelperExtension.cs: 1142 - Found 44 in A.step-1
+2021-05-13 15:00:44,588 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in A.step-1
+2021-05-13 15:00:44,589 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from F.step-1
+2021-05-13 15:00:44,589 INFO  ExportHelperExtension.cs: 1142 - Found 26 in F.step-1
+2021-05-13 15:00:44,589 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in F.step-1
+2021-05-13 15:00:44,590 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from G.step-2
+2021-05-13 15:00:44,590 INFO  ExportHelperExtension.cs: 1142 - Found 26 in G.step-2
+2021-05-13 15:00:44,590 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in G.step-2
+2021-05-13 15:00:44,591 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:00:44,591 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:00:44,591 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:00:44,592 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from H.step-1
+2021-05-13 15:00:44,592 INFO  ExportHelperExtension.cs: 1142 - Found 27 in H.step-1
+2021-05-13 15:00:44,593 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in H.step-1
+2021-05-13 15:00:44,593 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from E.step-1
+2021-05-13 15:00:44,593 INFO  ExportHelperExtension.cs: 1142 - Found 26 in E.step-1
+2021-05-13 15:00:44,594 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in E.step-1
+2021-05-13 15:00:44,594 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:00:44,594 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:00:44,595 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:00:44,595 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from E.step-2
+2021-05-13 15:00:44,595 INFO  ExportHelperExtension.cs: 1142 - Found 26 in E.step-2
+2021-05-13 15:00:44,596 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in E.step-2
+2021-05-13 15:00:44,596 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:00:44,596 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:00:44,597 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:00:44,597 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:00:44,597 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:00:44,598 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:00:44,598 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from G.step-1
+2021-05-13 15:00:44,598 INFO  ExportHelperExtension.cs: 1142 - Found 26 in G.step-1
+2021-05-13 15:00:44,599 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in G.step-1
+2021-05-13 15:00:44,599 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from H.step-2
+2021-05-13 15:00:44,599 INFO  ExportHelperExtension.cs: 1142 - Found 27 in H.step-2
+2021-05-13 15:00:44,599 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in H.step-2
+2021-05-13 15:00:44,600 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from C.step-2
+2021-05-13 15:00:44,600 INFO  ExportHelperExtension.cs: 1142 - Found 26 in C.step-2
+2021-05-13 15:00:44,600 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in C.step-2
+2021-05-13 15:00:44,601 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from D.step-2
+2021-05-13 15:00:44,601 INFO  ExportHelperExtension.cs: 1142 - Found 26 in D.step-2
+2021-05-13 15:00:44,602 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in D.step-2
+2021-05-13 15:00:44,602 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:00:44,602 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:00:44,602 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:00:44,603 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:00:44,603 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:00:44,603 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:00:44,604 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from D.step-1
+2021-05-13 15:00:44,604 INFO  ExportHelperExtension.cs: 1142 - Found 26 in D.step-1
+2021-05-13 15:00:44,604 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in D.step-1
+2021-05-13 15:00:44,605 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from F.step-2
+2021-05-13 15:00:44,605 INFO  ExportHelperExtension.cs: 1142 - Found 26 in F.step-2
+2021-05-13 15:00:44,605 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in F.step-2
+2021-05-13 15:00:44,606 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from FLANGE.step-1
+2021-05-13 15:00:44,606 INFO  ExportHelperExtension.cs: 1142 - Found 26 in FLANGE.step-1
+2021-05-13 15:00:44,606 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in FLANGE.step-1
+2021-05-13 15:00:44,607 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:00:44,607 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:00:44,607 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:00:44,608 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:00:44,608 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:00:44,608 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:00:44,609 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from C.step-1
+2021-05-13 15:00:44,609 INFO  ExportHelperExtension.cs: 1142 - Found 26 in C.step-1
+2021-05-13 15:00:44,612 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in C.step-1
+2021-05-13 15:00:44,612 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from 夹碗模型-2
+2021-05-13 15:00:44,628 INFO  ExportHelperExtension.cs: 1142 - Found 35 in 夹碗模型-2
+2021-05-13 15:00:44,628 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in 夹碗模型-2
+2021-05-13 15:00:44,630 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from ag95_grip_bowl.SLDASM
+2021-05-13 15:00:44,630 INFO  ExportHelperExtension.cs: 1142 - Found 62 in ag95_grip_bowl.SLDASM
+2021-05-13 15:00:44,631 INFO  ExportHelperExtension.cs: 1152 - Found 2 features of type [RefAxis] in ag95_grip_bowl.SLDASM
+2021-05-13 15:00:44,631 INFO  ExportHelperExtension.cs: 1155 - Proceeding through assembly components
+2021-05-13 15:00:44,631 INFO  ExportHelperExtension.cs: 1167 - 24 components to check
+2021-05-13 15:00:44,632 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from 夹碗模型-1
+2021-05-13 15:00:44,632 INFO  ExportHelperExtension.cs: 1142 - Found 35 in 夹碗模型-1
+2021-05-13 15:00:44,633 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in 夹碗模型-1
+2021-05-13 15:00:44,633 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from A.step-1
+2021-05-13 15:00:44,633 INFO  ExportHelperExtension.cs: 1142 - Found 44 in A.step-1
+2021-05-13 15:00:44,634 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in A.step-1
+2021-05-13 15:00:44,634 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from F.step-1
+2021-05-13 15:00:44,634 INFO  ExportHelperExtension.cs: 1142 - Found 26 in F.step-1
+2021-05-13 15:00:44,635 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in F.step-1
+2021-05-13 15:00:44,635 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from G.step-2
+2021-05-13 15:00:44,635 INFO  ExportHelperExtension.cs: 1142 - Found 26 in G.step-2
+2021-05-13 15:00:44,636 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in G.step-2
+2021-05-13 15:00:44,636 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:00:44,636 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:00:44,637 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:00:44,637 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from H.step-1
+2021-05-13 15:00:44,637 INFO  ExportHelperExtension.cs: 1142 - Found 27 in H.step-1
+2021-05-13 15:00:44,638 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in H.step-1
+2021-05-13 15:00:44,638 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from E.step-1
+2021-05-13 15:00:44,638 INFO  ExportHelperExtension.cs: 1142 - Found 26 in E.step-1
+2021-05-13 15:00:44,639 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in E.step-1
+2021-05-13 15:00:44,639 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:00:44,639 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:00:44,640 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:00:44,640 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from E.step-2
+2021-05-13 15:00:44,640 INFO  ExportHelperExtension.cs: 1142 - Found 26 in E.step-2
+2021-05-13 15:00:44,641 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in E.step-2
+2021-05-13 15:00:44,641 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:00:44,641 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:00:44,642 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:00:44,642 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:00:44,642 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:00:44,643 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:00:44,643 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from G.step-1
+2021-05-13 15:00:44,643 INFO  ExportHelperExtension.cs: 1142 - Found 26 in G.step-1
+2021-05-13 15:00:44,644 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in G.step-1
+2021-05-13 15:00:44,644 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from H.step-2
+2021-05-13 15:00:44,644 INFO  ExportHelperExtension.cs: 1142 - Found 27 in H.step-2
+2021-05-13 15:00:44,645 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in H.step-2
+2021-05-13 15:00:44,645 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from C.step-2
+2021-05-13 15:00:44,645 INFO  ExportHelperExtension.cs: 1142 - Found 26 in C.step-2
+2021-05-13 15:00:44,646 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in C.step-2
+2021-05-13 15:00:44,646 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from D.step-2
+2021-05-13 15:00:44,646 INFO  ExportHelperExtension.cs: 1142 - Found 26 in D.step-2
+2021-05-13 15:00:44,647 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in D.step-2
+2021-05-13 15:00:44,647 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:00:44,647 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:00:44,648 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:00:44,648 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:00:44,648 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:00:44,649 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:00:44,649 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from D.step-1
+2021-05-13 15:00:44,649 INFO  ExportHelperExtension.cs: 1142 - Found 26 in D.step-1
+2021-05-13 15:00:44,650 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in D.step-1
+2021-05-13 15:00:44,650 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from F.step-2
+2021-05-13 15:00:44,650 INFO  ExportHelperExtension.cs: 1142 - Found 26 in F.step-2
+2021-05-13 15:00:44,651 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in F.step-2
+2021-05-13 15:00:44,651 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from FLANGE.step-1
+2021-05-13 15:00:44,651 INFO  ExportHelperExtension.cs: 1142 - Found 26 in FLANGE.step-1
+2021-05-13 15:00:44,652 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in FLANGE.step-1
+2021-05-13 15:00:44,652 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:00:44,652 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:00:44,653 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:00:44,653 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:00:44,654 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:00:44,654 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:00:44,655 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from C.step-1
+2021-05-13 15:00:44,655 INFO  ExportHelperExtension.cs: 1142 - Found 26 in C.step-1
+2021-05-13 15:00:44,656 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in C.step-1
+2021-05-13 15:00:44,656 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from 夹碗模型-2
+2021-05-13 15:00:44,656 INFO  ExportHelperExtension.cs: 1142 - Found 35 in 夹碗模型-2
+2021-05-13 15:00:44,657 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in 夹碗模型-2
+2021-05-13 15:00:44,904 INFO  SwAddin.cs: 316 - Loading config tree
+2021-05-13 15:00:44,908 INFO  ExportPropertyManagerExtension.cs: 597 - Starting new configuration
+2021-05-13 15:00:44,911 INFO  SwAddin.cs: 321 - Showing property manager
+2021-05-13 15:01:26,540 INFO  ExportPropertyManager.cs: 1060 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-05-13 15:02:10,759 INFO  ExportPropertyManager.cs: 1178 - OnNumberBoxTrackingCompleted called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-05-13 15:02:54,085 INFO  ExportPropertyManager.cs: 1060 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-05-13 15:02:56,843 INFO  ExportPropertyManager.cs: 1060 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-05-13 15:02:59,868 INFO  ExportPropertyManager.cs: 1060 - OnComboboxSelectionChanged called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-05-13 15:03:05,955 INFO  ExportPropertyManager.cs: 456 - Configuration saved
+2021-05-13 15:03:06,409 INFO  ExportHelperExtension.cs: 338 - Creating joint grip_tip_link
+2021-05-13 15:03:06,414 INFO  ExportHelperExtension.cs: 1409 - Fixing components for ad95_grip_base_link
+2021-05-13 15:03:06,415 INFO  ExportHelperExtension.cs: 1414 - Fixing 25
+2021-05-13 15:03:06,415 INFO  ExportHelperExtension.cs: 1422 - Component 25 is already fixed
+2021-05-13 15:03:06,415 INFO  ExportHelperExtension.cs: 1414 - Fixing 44
+2021-05-13 15:03:06,416 INFO  ExportHelperExtension.cs: 1422 - Component 44 is already fixed
+2021-05-13 15:03:06,416 INFO  ExportHelperExtension.cs: 1414 - Fixing 45
+2021-05-13 15:03:06,416 INFO  ExportHelperExtension.cs: 1422 - Component 45 is already fixed
+2021-05-13 15:03:06,417 INFO  ExportHelperExtension.cs: 1414 - Fixing 46
+2021-05-13 15:03:06,417 INFO  ExportHelperExtension.cs: 1422 - Component 46 is already fixed
+2021-05-13 15:03:06,417 INFO  ExportHelperExtension.cs: 1414 - Fixing 37
+2021-05-13 15:03:06,417 INFO  ExportHelperExtension.cs: 1422 - Component 37 is already fixed
+2021-05-13 15:03:06,418 INFO  ExportHelperExtension.cs: 1414 - Fixing 36
+2021-05-13 15:03:06,418 INFO  ExportHelperExtension.cs: 1422 - Component 36 is already fixed
+2021-05-13 15:03:06,418 INFO  ExportHelperExtension.cs: 1414 - Fixing 35
+2021-05-13 15:03:06,418 INFO  ExportHelperExtension.cs: 1422 - Component 35 is already fixed
+2021-05-13 15:03:06,419 INFO  ExportHelperExtension.cs: 1414 - Fixing 49
+2021-05-13 15:03:06,419 INFO  ExportHelperExtension.cs: 1422 - Component 49 is already fixed
+2021-05-13 15:03:06,419 INFO  ExportHelperExtension.cs: 1414 - Fixing 39
+2021-05-13 15:03:06,420 INFO  ExportHelperExtension.cs: 1422 - Component 39 is already fixed
+2021-05-13 15:03:06,420 INFO  ExportHelperExtension.cs: 1414 - Fixing 40
+2021-05-13 15:03:06,420 INFO  ExportHelperExtension.cs: 1422 - Component 40 is already fixed
+2021-05-13 15:03:06,420 INFO  ExportHelperExtension.cs: 1414 - Fixing 43
+2021-05-13 15:03:06,421 INFO  ExportHelperExtension.cs: 1422 - Component 43 is already fixed
+2021-05-13 15:03:06,421 INFO  ExportHelperExtension.cs: 1414 - Fixing 42
+2021-05-13 15:03:06,421 INFO  ExportHelperExtension.cs: 1422 - Component 42 is already fixed
+2021-05-13 15:03:06,421 INFO  ExportHelperExtension.cs: 1414 - Fixing 28
+2021-05-13 15:03:06,422 INFO  ExportHelperExtension.cs: 1422 - Component 28 is already fixed
+2021-05-13 15:03:06,422 INFO  ExportHelperExtension.cs: 1414 - Fixing 27
+2021-05-13 15:03:06,422 INFO  ExportHelperExtension.cs: 1422 - Component 27 is already fixed
+2021-05-13 15:03:06,423 INFO  ExportHelperExtension.cs: 1414 - Fixing 31
+2021-05-13 15:03:06,423 INFO  ExportHelperExtension.cs: 1422 - Component 31 is already fixed
+2021-05-13 15:03:06,423 INFO  ExportHelperExtension.cs: 1414 - Fixing 30
+2021-05-13 15:03:06,423 INFO  ExportHelperExtension.cs: 1422 - Component 30 is already fixed
+2021-05-13 15:03:06,424 INFO  ExportHelperExtension.cs: 1414 - Fixing 26
+2021-05-13 15:03:06,424 INFO  ExportHelperExtension.cs: 1422 - Component 26 is already fixed
+2021-05-13 15:03:06,424 INFO  ExportHelperExtension.cs: 1414 - Fixing 29
+2021-05-13 15:03:06,424 INFO  ExportHelperExtension.cs: 1422 - Component 29 is already fixed
+2021-05-13 15:03:06,425 INFO  ExportHelperExtension.cs: 1414 - Fixing 48
+2021-05-13 15:03:06,425 INFO  ExportHelperExtension.cs: 1422 - Component 48 is already fixed
+2021-05-13 15:03:06,425 INFO  ExportHelperExtension.cs: 1414 - Fixing 47
+2021-05-13 15:03:06,426 INFO  ExportHelperExtension.cs: 1422 - Component 47 is already fixed
+2021-05-13 15:03:06,426 INFO  ExportHelperExtension.cs: 1414 - Fixing 34
+2021-05-13 15:03:06,426 INFO  ExportHelperExtension.cs: 1422 - Component 34 is already fixed
+2021-05-13 15:03:06,426 INFO  ExportHelperExtension.cs: 1414 - Fixing 33
+2021-05-13 15:03:06,427 INFO  ExportHelperExtension.cs: 1422 - Component 33 is already fixed
+2021-05-13 15:03:07,823 INFO  ExportHelperExtension.cs: 835 - R1: 0, 0
+2021-05-13 15:03:07,823 INFO  ExportHelperExtension.cs: 844 - R2: 0, 0
+2021-05-13 15:03:07,832 INFO  : 0 - L1: 1, System.Double[]
+2021-05-13 15:03:07,835 INFO  ExportHelperExtension.cs: 860 - L2: 0
+2021-05-13 15:03:09,265 WARN  ExportHelperExtension.cs: 342 - Creating joint from parent ad95_grip_base_link to child grip_tip_link failed
+2021-05-13 15:03:09,374 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from ag95_grip_bowl.SLDASM
+2021-05-13 15:03:09,378 INFO  ExportHelperExtension.cs: 1142 - Found 65 in ag95_grip_bowl.SLDASM
+2021-05-13 15:03:09,379 INFO  ExportHelperExtension.cs: 1152 - Found 2 features of type [CoordSys] in ag95_grip_bowl.SLDASM
+2021-05-13 15:03:09,379 INFO  ExportHelperExtension.cs: 1155 - Proceeding through assembly components
+2021-05-13 15:03:09,379 INFO  ExportHelperExtension.cs: 1167 - 24 components to check
+2021-05-13 15:03:09,380 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from 夹碗模型-1
+2021-05-13 15:03:09,380 INFO  ExportHelperExtension.cs: 1142 - Found 35 in 夹碗模型-1
+2021-05-13 15:03:09,381 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in 夹碗模型-1
+2021-05-13 15:03:09,381 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from A.step-1
+2021-05-13 15:03:09,381 INFO  ExportHelperExtension.cs: 1142 - Found 44 in A.step-1
+2021-05-13 15:03:09,382 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in A.step-1
+2021-05-13 15:03:09,382 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from F.step-1
+2021-05-13 15:03:09,382 INFO  ExportHelperExtension.cs: 1142 - Found 26 in F.step-1
+2021-05-13 15:03:09,383 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in F.step-1
+2021-05-13 15:03:09,383 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from G.step-2
+2021-05-13 15:03:09,383 INFO  ExportHelperExtension.cs: 1142 - Found 26 in G.step-2
+2021-05-13 15:03:09,384 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in G.step-2
+2021-05-13 15:03:09,384 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:03:09,384 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:03:09,385 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:03:09,385 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from H.step-1
+2021-05-13 15:03:09,385 INFO  ExportHelperExtension.cs: 1142 - Found 27 in H.step-1
+2021-05-13 15:03:09,386 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in H.step-1
+2021-05-13 15:03:09,386 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from E.step-1
+2021-05-13 15:03:09,387 INFO  ExportHelperExtension.cs: 1142 - Found 26 in E.step-1
+2021-05-13 15:03:09,387 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in E.step-1
+2021-05-13 15:03:09,387 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:03:09,388 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:03:09,388 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:03:09,388 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from E.step-2
+2021-05-13 15:03:09,389 INFO  ExportHelperExtension.cs: 1142 - Found 26 in E.step-2
+2021-05-13 15:03:09,389 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in E.step-2
+2021-05-13 15:03:09,389 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:03:09,390 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:03:09,390 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:03:09,390 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:03:09,391 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:03:09,391 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:03:09,391 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from G.step-1
+2021-05-13 15:03:09,392 INFO  ExportHelperExtension.cs: 1142 - Found 26 in G.step-1
+2021-05-13 15:03:09,392 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in G.step-1
+2021-05-13 15:03:09,392 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from H.step-2
+2021-05-13 15:03:09,392 INFO  ExportHelperExtension.cs: 1142 - Found 27 in H.step-2
+2021-05-13 15:03:09,393 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in H.step-2
+2021-05-13 15:03:09,393 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from C.step-2
+2021-05-13 15:03:09,393 INFO  ExportHelperExtension.cs: 1142 - Found 26 in C.step-2
+2021-05-13 15:03:09,394 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in C.step-2
+2021-05-13 15:03:09,394 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from D.step-2
+2021-05-13 15:03:09,394 INFO  ExportHelperExtension.cs: 1142 - Found 26 in D.step-2
+2021-05-13 15:03:09,395 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in D.step-2
+2021-05-13 15:03:09,395 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:03:09,396 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:03:09,396 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:03:09,396 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:03:09,396 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:03:09,397 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:03:09,397 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from D.step-1
+2021-05-13 15:03:09,398 INFO  ExportHelperExtension.cs: 1142 - Found 26 in D.step-1
+2021-05-13 15:03:09,398 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in D.step-1
+2021-05-13 15:03:09,398 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from F.step-2
+2021-05-13 15:03:09,399 INFO  ExportHelperExtension.cs: 1142 - Found 26 in F.step-2
+2021-05-13 15:03:09,399 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in F.step-2
+2021-05-13 15:03:09,399 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from FLANGE.step-1
+2021-05-13 15:03:09,400 INFO  ExportHelperExtension.cs: 1142 - Found 26 in FLANGE.step-1
+2021-05-13 15:03:09,400 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in FLANGE.step-1
+2021-05-13 15:03:09,400 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:03:09,401 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:03:09,401 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:03:09,401 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:03:09,402 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:03:09,402 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:03:09,403 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from C.step-1
+2021-05-13 15:03:09,403 INFO  ExportHelperExtension.cs: 1142 - Found 26 in C.step-1
+2021-05-13 15:03:09,403 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in C.step-1
+2021-05-13 15:03:09,404 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [CoordSys] from 夹碗模型-2
+2021-05-13 15:03:09,404 INFO  ExportHelperExtension.cs: 1142 - Found 35 in 夹碗模型-2
+2021-05-13 15:03:09,404 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [CoordSys] in 夹碗模型-2
+2021-05-13 15:03:09,405 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from ag95_grip_bowl.SLDASM
+2021-05-13 15:03:09,405 INFO  ExportHelperExtension.cs: 1142 - Found 65 in ag95_grip_bowl.SLDASM
+2021-05-13 15:03:09,406 INFO  ExportHelperExtension.cs: 1152 - Found 3 features of type [RefAxis] in ag95_grip_bowl.SLDASM
+2021-05-13 15:03:09,406 INFO  ExportHelperExtension.cs: 1155 - Proceeding through assembly components
+2021-05-13 15:03:09,406 INFO  ExportHelperExtension.cs: 1167 - 24 components to check
+2021-05-13 15:03:09,407 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from 夹碗模型-1
+2021-05-13 15:03:09,407 INFO  ExportHelperExtension.cs: 1142 - Found 35 in 夹碗模型-1
+2021-05-13 15:03:09,407 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in 夹碗模型-1
+2021-05-13 15:03:09,408 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from A.step-1
+2021-05-13 15:03:09,408 INFO  ExportHelperExtension.cs: 1142 - Found 44 in A.step-1
+2021-05-13 15:03:09,411 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in A.step-1
+2021-05-13 15:03:09,412 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from F.step-1
+2021-05-13 15:03:09,440 INFO  ExportHelperExtension.cs: 1142 - Found 26 in F.step-1
+2021-05-13 15:03:09,441 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in F.step-1
+2021-05-13 15:03:09,441 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from G.step-2
+2021-05-13 15:03:09,442 INFO  ExportHelperExtension.cs: 1142 - Found 26 in G.step-2
+2021-05-13 15:03:09,442 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in G.step-2
+2021-05-13 15:03:09,443 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:03:09,443 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:03:09,443 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-4
+2021-05-13 15:03:09,444 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from H.step-1
+2021-05-13 15:03:09,444 INFO  ExportHelperExtension.cs: 1142 - Found 27 in H.step-1
+2021-05-13 15:03:09,445 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in H.step-1
+2021-05-13 15:03:09,445 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from E.step-1
+2021-05-13 15:03:09,445 INFO  ExportHelperExtension.cs: 1142 - Found 26 in E.step-1
+2021-05-13 15:03:09,446 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in E.step-1
+2021-05-13 15:03:09,446 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:03:09,447 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:03:09,447 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-2
+2021-05-13 15:03:09,447 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from E.step-2
+2021-05-13 15:03:09,448 INFO  ExportHelperExtension.cs: 1142 - Found 26 in E.step-2
+2021-05-13 15:03:09,448 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in E.step-2
+2021-05-13 15:03:09,448 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:03:09,449 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:03:09,449 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-1
+2021-05-13 15:03:09,449 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:03:09,450 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:03:09,450 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-1
+2021-05-13 15:03:09,450 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from G.step-1
+2021-05-13 15:03:09,451 INFO  ExportHelperExtension.cs: 1142 - Found 26 in G.step-1
+2021-05-13 15:03:09,451 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in G.step-1
+2021-05-13 15:03:09,451 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from H.step-2
+2021-05-13 15:03:09,452 INFO  ExportHelperExtension.cs: 1142 - Found 27 in H.step-2
+2021-05-13 15:03:09,452 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in H.step-2
+2021-05-13 15:03:09,452 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from C.step-2
+2021-05-13 15:03:09,453 INFO  ExportHelperExtension.cs: 1142 - Found 26 in C.step-2
+2021-05-13 15:03:09,453 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in C.step-2
+2021-05-13 15:03:09,453 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from D.step-2
+2021-05-13 15:03:09,454 INFO  ExportHelperExtension.cs: 1142 - Found 26 in D.step-2
+2021-05-13 15:03:09,454 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in D.step-2
+2021-05-13 15:03:09,454 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:03:09,455 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:03:09,455 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-3
+2021-05-13 15:03:09,455 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:03:09,456 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:03:09,456 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-3
+2021-05-13 15:03:09,456 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from D.step-1
+2021-05-13 15:03:09,457 INFO  ExportHelperExtension.cs: 1142 - Found 26 in D.step-1
+2021-05-13 15:03:09,457 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in D.step-1
+2021-05-13 15:03:09,457 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from F.step-2
+2021-05-13 15:03:09,458 INFO  ExportHelperExtension.cs: 1142 - Found 26 in F.step-2
+2021-05-13 15:03:09,458 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in F.step-2
+2021-05-13 15:03:09,458 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from FLANGE.step-1
+2021-05-13 15:03:09,459 INFO  ExportHelperExtension.cs: 1142 - Found 26 in FLANGE.step-1
+2021-05-13 15:03:09,459 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in FLANGE.step-1
+2021-05-13 15:03:09,459 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:03:09,460 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:03:09,460 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M4X8-N.step-2
+2021-05-13 15:03:09,460 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:03:09,461 INFO  ExportHelperExtension.cs: 1142 - Found 26 in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:03:09,461 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in hexagon socket head cap screws gb_GB_FASTENER_SCREWS_HSHCS M3X6-N.step-4
+2021-05-13 15:03:09,461 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from C.step-1
+2021-05-13 15:03:09,462 INFO  ExportHelperExtension.cs: 1142 - Found 26 in C.step-1
+2021-05-13 15:03:09,462 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in C.step-1
+2021-05-13 15:03:09,462 INFO  ExportHelperExtension.cs: 1131 - Retrieving features of type [RefAxis] from 夹碗模型-2
+2021-05-13 15:03:09,463 INFO  ExportHelperExtension.cs: 1142 - Found 35 in 夹碗模型-2
+2021-05-13 15:03:09,463 INFO  ExportHelperExtension.cs: 1152 - Found 0 features of type [RefAxis] in 夹碗模型-2
+2021-05-13 15:03:09,512 INFO  ExportPropertyManager.cs: 1184 - AfterClose called. This method no longer throws an Exception. It just silently does nothing. Ok, except for this logging message
+2021-05-13 15:03:20,839 INFO  AssemblyExportForm.cs: 254 - Completing URDF export
+2021-05-13 15:03:20,845 INFO  Serialization.cs: 275 - URDF Configuration found
+<Link z:Id="i1" xmlns="http://schemas.datacontract.org/2004/07/SW2URDF" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/"><Attributes><Attribute z:Id="i2"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">ad95_grip_base_link</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i3" i:type="Inertial"><Attributes/><ChildElements><URDFElement z:Id="i4" i:type="Origin"><Attributes><Attribute z:Id="i5"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i6"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i6"/><XYZAttribute z:Ref="i5"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i7" i:type="Mass"><Attributes><Attribute z:Id="i8"><AttributeType>value</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>mass</ElementName><required>false</required><ValueAttribute z:Ref="i8"/></URDFElement><URDFElement z:Id="i9" i:type="Inertia"><Attributes><Attribute z:Id="i10"><AttributeType>ixx</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i11"><AttributeType>ixy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i12"><AttributeType>ixz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i13"><AttributeType>iyy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i14"><AttributeType>iyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i15"><AttributeType>izz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>inertia</ElementName><required>false</required><IxxAttribute z:Ref="i10"/><IxyAttribute z:Ref="i11"/><IxzAttribute z:Ref="i12"/><IyyAttribute z:Ref="i13"/><IyzAttribute z:Ref="i14"/><IzzAttribute z:Ref="i15"/></URDFElement></ChildElements><ElementName>inertial</ElementName><required>false</required><Inertia z:Ref="i9"/><Mass z:Ref="i7"/><Origin z:Ref="i4"/></URDFElement><URDFElement z:Id="i16" i:type="Visual"><Attributes/><ChildElements><URDFElement z:Id="i17" i:type="Origin"><Attributes><Attribute z:Id="i18"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i19"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i19"/><XYZAttribute z:Ref="i18"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i20" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i21" i:type="Mesh"><Attributes><Attribute z:Id="i22"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i22"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i21"/></URDFElement><URDFElement z:Id="i23" i:type="Material"><Attributes><Attribute z:Id="i24"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements><URDFElement z:Id="i25" i:type="Color"><Attributes><Attribute z:Id="i26"><AttributeType>rgba</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>color</ElementName><required>false</required><RGBAAttribute z:Ref="i26"/></URDFElement><URDFElement z:Id="i27" i:type="Texture"><Attributes><Attribute z:Id="i28"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>texture</ElementName><required>false</required><FilenameAttribute z:Ref="i28"/><wFilename/></URDFElement></ChildElements><ElementName>material</ElementName><required>false</required><Color z:Ref="i25"/><NameAttribute z:Ref="i24"/><Texture z:Ref="i27"/></URDFElement></ChildElements><ElementName>visual</ElementName><required>false</required><Geometry z:Ref="i20"/><Material z:Ref="i23"/><Origin z:Ref="i17"/></URDFElement><URDFElement z:Id="i29" i:type="Collision"><Attributes/><ChildElements><URDFElement z:Id="i30" i:type="Origin"><Attributes><Attribute z:Id="i31"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i32"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i32"/><XYZAttribute z:Ref="i31"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i33" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i34" i:type="Mesh"><Attributes><Attribute z:Id="i35"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i35"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i34"/></URDFElement></ChildElements><ElementName>collision</ElementName><required>false</required><Geometry z:Ref="i33"/><Origin z:Ref="i30"/></URDFElement><URDFElement z:Id="i36" i:type="Joint"><Attributes><Attribute z:Id="i37"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute><Attribute z:Id="i38"><AttributeType>type</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements><URDFElement z:Id="i39" i:type="Origin"><Attributes><Attribute z:Id="i40"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i41"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i41"/><XYZAttribute z:Ref="i40"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i42" i:type="ParentLink"><Attributes><Attribute z:Id="i43"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>parent</ElementName><required>true</required><NameAttribute z:Ref="i43"/></URDFElement><URDFElement z:Id="i44" i:type="ChildLink"><Attributes><Attribute z:Id="i45"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>child</ElementName><required>true</required><NameAttribute z:Ref="i45"/></URDFElement><URDFElement z:Id="i46" i:type="Axis"><Attributes><Attribute z:Id="i47"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>axis</ElementName><required>false</required><XYZAttribute z:Ref="i47"/></URDFElement><URDFElement z:Id="i48" i:type="Limit"><Attributes><Attribute z:Id="i49"><AttributeType>lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i50"><AttributeType>upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i51"><AttributeType>effort</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i52"><AttributeType>velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>limit</ElementName><required>false</required><EffortAttribute z:Ref="i51"/><LowerAttribute z:Ref="i49"/><UpperAttribute z:Ref="i50"/><VelocityAttribute z:Ref="i52"/></URDFElement><URDFElement z:Id="i53" i:type="Calibration"><Attributes><Attribute z:Id="i54"><AttributeType>rising</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i55"><AttributeType>falling</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>calibration</ElementName><required>false</required><FallingAttribute z:Ref="i55"/><RisingAttribute z:Ref="i54"/></URDFElement><URDFElement z:Id="i56" i:type="Dynamics"><Attributes><Attribute z:Id="i57"><AttributeType>damping</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i58"><AttributeType>friction</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>dynamics</ElementName><required>false</required><DampingAttribute z:Ref="i57"/><FrictionAttribute z:Ref="i58"/></URDFElement><URDFElement z:Id="i59" i:type="SafetyController"><Attributes><Attribute z:Id="i60"><AttributeType>soft_upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i61"><AttributeType>soft_lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i62"><AttributeType>k_position</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i63"><AttributeType>k_velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>safety_controller</ElementName><required>false</required><KPositionAttribute z:Ref="i62"/><KVelocityAttribute z:Ref="i63"/><SoftLowerAttribute z:Ref="i61"/><SoftUpperAttribute z:Ref="i60"/></URDFElement><URDFElement z:Id="i64" i:type="Mimic"><Attributes><Attribute z:Id="i65"><AttributeType>joint</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i66"><AttributeType>multiplier</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i67"><AttributeType>offset</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mimic</ElementName><required>false</required><JointNameAttribute z:Ref="i65"/><MultiplierAttribute z:Ref="i66"/><OffsetAttribute z:Ref="i67"/></URDFElement></ChildElements><ElementName>joint</ElementName><required>false</required><Axis z:Ref="i46"/><AxisName/><Calibration z:Ref="i53"/><Child z:Ref="i44"/><CoordinateSystemName>?????????1</CoordinateSystemName><Dynamics z:Ref="i56"/><Limit z:Ref="i48"/><Mimic z:Ref="i64"/><NameAttribute z:Ref="i37"/><Origin z:Ref="i39"/><Parent z:Ref="i42"/><Safety z:Ref="i59"/><TypeAttribute z:Ref="i38"/></URDFElement></ChildElements><ElementName>link</ElementName><required>true</required><Children><Link z:Id="i68"><Attributes><Attribute z:Id="i69"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">grip_tip_link</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i70" i:type="Inertial"><Attributes/><ChildElements><URDFElement z:Id="i71" i:type="Origin"><Attributes><Attribute z:Id="i72"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i73"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i73"/><XYZAttribute z:Ref="i72"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i74" i:type="Mass"><Attributes><Attribute z:Id="i75"><AttributeType>value</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>mass</ElementName><required>false</required><ValueAttribute z:Ref="i75"/></URDFElement><URDFElement z:Id="i76" i:type="Inertia"><Attributes><Attribute z:Id="i77"><AttributeType>ixx</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i78"><AttributeType>ixy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i79"><AttributeType>ixz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i80"><AttributeType>iyy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i81"><AttributeType>iyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute><Attribute z:Id="i82"><AttributeType>izz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:double" xmlns:a="http://www.w3.org/2001/XMLSchema">0</Value></Attribute></Attributes><ChildElements/><ElementName>inertia</ElementName><required>false</required><IxxAttribute z:Ref="i77"/><IxyAttribute z:Ref="i78"/><IxzAttribute z:Ref="i79"/><IyyAttribute z:Ref="i80"/><IyzAttribute z:Ref="i81"/><IzzAttribute z:Ref="i82"/></URDFElement></ChildElements><ElementName>inertial</ElementName><required>false</required><Inertia z:Ref="i76"/><Mass z:Ref="i74"/><Origin z:Ref="i71"/></URDFElement><URDFElement z:Id="i83" i:type="Visual"><Attributes/><ChildElements><URDFElement z:Id="i84" i:type="Origin"><Attributes><Attribute z:Id="i85"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i86"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i86"/><XYZAttribute z:Ref="i85"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i87" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i88" i:type="Mesh"><Attributes><Attribute z:Id="i89"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i89"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i88"/></URDFElement><URDFElement z:Id="i90" i:type="Material"><Attributes><Attribute z:Id="i91"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements><URDFElement z:Id="i92" i:type="Color"><Attributes><Attribute z:Id="i93"><AttributeType>rgba</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double><a:double>1</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>color</ElementName><required>false</required><RGBAAttribute z:Ref="i93"/></URDFElement><URDFElement z:Id="i94" i:type="Texture"><Attributes><Attribute z:Id="i95"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>texture</ElementName><required>false</required><FilenameAttribute z:Ref="i95"/><wFilename/></URDFElement></ChildElements><ElementName>material</ElementName><required>false</required><Color z:Ref="i92"/><NameAttribute z:Ref="i91"/><Texture z:Ref="i94"/></URDFElement></ChildElements><ElementName>visual</ElementName><required>false</required><Geometry z:Ref="i87"/><Material z:Ref="i90"/><Origin z:Ref="i84"/></URDFElement><URDFElement z:Id="i96" i:type="Collision"><Attributes/><ChildElements><URDFElement z:Id="i97" i:type="Origin"><Attributes><Attribute z:Id="i98"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i99"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i99"/><XYZAttribute z:Ref="i98"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i100" i:type="Geometry"><Attributes/><ChildElements><URDFElement z:Id="i101" i:type="Mesh"><Attributes><Attribute z:Id="i102"><AttributeType>filename</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mesh</ElementName><required>false</required><FilenameAttribute z:Ref="i102"/></URDFElement></ChildElements><ElementName>geometry</ElementName><required>true</required><Mesh z:Ref="i101"/></URDFElement></ChildElements><ElementName>collision</ElementName><required>false</required><Geometry z:Ref="i100"/><Origin z:Ref="i97"/></URDFElement><URDFElement z:Id="i103" i:type="Joint"><Attributes><Attribute z:Id="i104"><AttributeType>name</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">grip_tip_joint</Value></Attribute><Attribute z:Id="i105"><AttributeType>type</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema">fixed</Value></Attribute></Attributes><ChildElements><URDFElement z:Id="i106" i:type="Origin"><Attributes><Attribute z:Id="i107"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute><Attribute z:Id="i108"><AttributeType>rpy</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>origin</ElementName><required>false</required><RPYAttribute z:Ref="i108"/><XYZAttribute z:Ref="i107"/><isCustomized>false</isCustomized></URDFElement><URDFElement z:Id="i109" i:type="ParentLink"><Attributes><Attribute z:Id="i110"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>parent</ElementName><required>true</required><NameAttribute z:Ref="i110"/></URDFElement><URDFElement z:Id="i111" i:type="ChildLink"><Attributes><Attribute z:Id="i112"><AttributeType>link</AttributeType><IsRequired>true</IsRequired><Value i:type="a:string" xmlns:a="http://www.w3.org/2001/XMLSchema"/></Attribute></Attributes><ChildElements/><ElementName>child</ElementName><required>true</required><NameAttribute z:Ref="i112"/></URDFElement><URDFElement z:Id="i113" i:type="Axis"><Attributes><Attribute z:Id="i114"><AttributeType>xyz</AttributeType><IsRequired>true</IsRequired><Value i:type="a:ArrayOfdouble" xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:double>0</a:double><a:double>0</a:double><a:double>0</a:double></Value></Attribute></Attributes><ChildElements/><ElementName>axis</ElementName><required>false</required><XYZAttribute z:Ref="i114"/></URDFElement><URDFElement z:Id="i115" i:type="Limit"><Attributes><Attribute z:Id="i116"><AttributeType>lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i117"><AttributeType>upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i118"><AttributeType>effort</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i119"><AttributeType>velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>limit</ElementName><required>false</required><EffortAttribute z:Ref="i118"/><LowerAttribute z:Ref="i116"/><UpperAttribute z:Ref="i117"/><VelocityAttribute z:Ref="i119"/></URDFElement><URDFElement z:Id="i120" i:type="Calibration"><Attributes><Attribute z:Id="i121"><AttributeType>rising</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i122"><AttributeType>falling</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>calibration</ElementName><required>false</required><FallingAttribute z:Ref="i122"/><RisingAttribute z:Ref="i121"/></URDFElement><URDFElement z:Id="i123" i:type="Dynamics"><Attributes><Attribute z:Id="i124"><AttributeType>damping</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i125"><AttributeType>friction</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>dynamics</ElementName><required>false</required><DampingAttribute z:Ref="i124"/><FrictionAttribute z:Ref="i125"/></URDFElement><URDFElement z:Id="i126" i:type="SafetyController"><Attributes><Attribute z:Id="i127"><AttributeType>soft_upper</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i128"><AttributeType>soft_lower</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i129"><AttributeType>k_position</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i130"><AttributeType>k_velocity</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>safety_controller</ElementName><required>false</required><KPositionAttribute z:Ref="i129"/><KVelocityAttribute z:Ref="i130"/><SoftLowerAttribute z:Ref="i128"/><SoftUpperAttribute z:Ref="i127"/></URDFElement><URDFElement z:Id="i131" i:type="Mimic"><Attributes><Attribute z:Id="i132"><AttributeType>joint</AttributeType><IsRequired>true</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i133"><AttributeType>multiplier</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute><Attribute z:Id="i134"><AttributeType>offset</AttributeType><IsRequired>false</IsRequired><Value i:nil="true"/></Attribute></Attributes><ChildElements/><ElementName>mimic</ElementName><required>false</required><JointNameAttribute z:Ref="i132"/><MultiplierAttribute z:Ref="i133"/><OffsetAttribute z:Ref="i134"/></URDFElement></ChildElements><ElementName>joint</ElementName><required>false</required><Axis z:Ref="i113"/><AxisName>None</AxisName><Calibration z:Ref="i120"/><Child z:Ref="i111"/><CoordinateSystemName>?????????2</CoordinateSystemName><Dynamics z:Ref="i123"/><Limit z:Ref="i115"/><Mimic z:Ref="i131"/><NameAttribute z:Ref="i104"/><Origin z:Ref="i106"/><Parent z:Ref="i109"/><Safety z:Ref="i126"/><TypeAttribute z:Ref="i105"/></URDFElement></ChildElements><ElementName>link</ElementName><required>true</required><Children/><Collision z:Ref="i96"/><Inertial z:Ref="i70"/><Joint z:Ref="i103"/><NameAttribute z:Ref="i69"/><Parent z:Ref="i1"/><STLQualityFine>false</STLQualityFine><SWComponentPIDs xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:base64Binary>yDIAAAUAAAD//v8VOVmXeCFqi1ctADIAQABhAGcAOQA1AF8AZwByAGkAcABfAGIAbwB3AGwABAAAABAAAAABAAAAAQAAAEwAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8VOVmXeCFqi1ctADEAQABhAGcAOQA1AF8AZwByAGkAcABfAGIAbwB3AGwABAAAABAAAAABAAAAAQAAADIAAAA=</a:base64Binary></SWComponentPIDs><SWMainComponentPID i:nil="true"/><Visual z:Ref="i83"/><isFixedFrame>false</isFixedFrame><isIncomplete>false</isIncomplete></Link></Children><Collision z:Ref="i29"/><Inertial z:Ref="i3"/><Joint z:Ref="i36"/><NameAttribute z:Ref="i2"/><Parent i:nil="true"/><STLQualityFine>false</STLQualityFine><SWComponentPIDs xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"><a:base64Binary>yDIAAAUAAAD//v8XQQAuAHMAdABlAHAALQAxAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAZAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8cRgBMAEEATgBHAEUALgBzAHQAZQBwAC0AMQBAAGEAZwA5ADUAXwBnAHIAaQBwAF8AYgBvAHcAbAAEAAAAEAAAAAEAAAABAAAALAAAAA==</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9XaABlAHgAYQBnAG8AbgAgAHMAbwBjAGsAZQB0ACAAaABlAGEAZAAgAGMAYQBwACAAcwBjAHIAZQB3AHMAIABnAGIAXwBHAEIAXwBGAEEAUwBUAEUATgBFAFIAXwBTAEMAUgBFAFcAUwBfAEgAUwBIAEMAUwAgAE0ANABYADgALQBOAC4AcwB0AGUAcAAtADEAQABhAGcAOQA1AF8AZwByAGkAcABfAGIAbwB3AGwABAAAABAAAAABAAAAAQAAAC0AAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9XaABlAHgAYQBnAG8AbgAgAHMAbwBjAGsAZQB0ACAAaABlAGEAZAAgAGMAYQBwACAAcwBjAHIAZQB3AHMAIABnAGIAXwBHAEIAXwBGAEEAUwBUAEUATgBFAFIAXwBTAEMAUgBFAFcAUwBfAEgAUwBIAEMAUwAgAE0ANABYADgALQBOAC4AcwB0AGUAcAAtADIAQABhAGcAOQA1AF8AZwByAGkAcABfAGIAbwB3AGwABAAAABAAAAABAAAAAQAAAC4AAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XRwAuAHMAdABlAHAALQAyAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAlAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XRQAuAHMAdABlAHAALQAyAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAkAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XRAAuAHMAdABlAHAALQAyAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAjAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XRgAuAHMAdABlAHAALQAyAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAxAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XSAAuAHMAdABlAHAALQAyAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAnAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XQwAuAHMAdABlAHAALQAyAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAoAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9XaABlAHgAYQBnAG8AbgAgAHMAbwBjAGsAZQB0ACAAaABlAGEAZAAgAGMAYQBwACAAcwBjAHIAZQB3AHMAIABnAGIAXwBHAEIAXwBGAEEAUwBUAEUATgBFAFIAXwBTAEMAUgBFAFcAUwBfAEgAUwBIAEMAUwAgAE0AMwBYADYALQBOAC4AcwB0AGUAcAAtADQAQABhAGcAOQA1AF8AZwByAGkAcABfAGIAbwB3AGwABAAAABAAAAABAAAAAQAAACsAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9XaABlAHgAYQBnAG8AbgAgAHMAbwBjAGsAZQB0ACAAaABlAGEAZAAgAGMAYQBwACAAcwBjAHIAZQB3AHMAIABnAGIAXwBHAEIAXwBGAEEAUwBUAEUATgBFAFIAXwBTAEMAUgBFAFcAUwBfAEgAUwBIAEMAUwAgAE0AMwBYADYALQBOAC4AcwB0AGUAcAAtADMAQABhAGcAOQA1AF8AZwByAGkAcABfAGIAbwB3AGwABAAAABAAAAABAAAAAQAAACoAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XRQAuAHMAdABlAHAALQAxAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAcAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XSAAuAHMAdABlAHAALQAxAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAbAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XQwAuAHMAdABlAHAALQAxAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAfAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XRwAuAHMAdABlAHAALQAxAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAeAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XRgAuAHMAdABlAHAALQAxAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAaAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v8XRAAuAHMAdABlAHAALQAxAEAAYQBnADkANQBfAGcAcgBpAHAAXwBiAG8AdwBsAAQAAAAQAAAAAQAAAAEAAAAdAAAA</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9XaABlAHgAYQBnAG8AbgAgAHMAbwBjAGsAZQB0ACAAaABlAGEAZAAgAGMAYQBwACAAcwBjAHIAZQB3AHMAIABnAGIAXwBHAEIAXwBGAEEAUwBUAEUATgBFAFIAXwBTAEMAUgBFAFcAUwBfAEgAUwBIAEMAUwAgAE0ANABYADgALQBOAC4AcwB0AGUAcAAtADQAQABhAGcAOQA1AF8AZwByAGkAcABfAGIAbwB3AGwABAAAABAAAAABAAAAAQAAADAAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9XaABlAHgAYQBnAG8AbgAgAHMAbwBjAGsAZQB0ACAAaABlAGEAZAAgAGMAYQBwACAAcwBjAHIAZQB3AHMAIABnAGIAXwBHAEIAXwBGAEEAUwBUAEUATgBFAFIAXwBTAEMAUgBFAFcAUwBfAEgAUwBIAEMAUwAgAE0ANABYADgALQBOAC4AcwB0AGUAcAAtADMAQABhAGcAOQA1AF8AZwByAGkAcABfAGIAbwB3AGwABAAAABAAAAABAAAAAQAAAC8AAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9XaABlAHgAYQBnAG8AbgAgAHMAbwBjAGsAZQB0ACAAaABlAGEAZAAgAGMAYQBwACAAcwBjAHIAZQB3AHMAIABnAGIAXwBHAEIAXwBGAEEAUwBUAEUATgBFAFIAXwBTAEMAUgBFAFcAUwBfAEgAUwBIAEMAUwAgAE0AMwBYADYALQBOAC4AcwB0AGUAcAAtADIAQABhAGcAOQA1AF8AZwByAGkAcABfAGIAbwB3AGwABAAAABAAAAABAAAAAQAAACIAAAA=</a:base64Binary><a:base64Binary>yDIAAAUAAAD//v9XaABlAHgAYQBnAG8AbgAgAHMAbwBjAGsAZQB0ACAAaABlAGEAZAAgAGMAYQBwACAAcwBjAHIAZQB3AHMAIABnAGIAXwBHAEIAXwBGAEEAUwBUAEUATgBFAFIAXwBTAEMAUgBFAFcAUwBfAEgAUwBIAEMAUwAgAE0AMwBYADYALQBOAC4AcwB0AGUAcAAtADEAQABhAGcAOQA1AF8AZwByAGkAcABfAGIAbwB3AGwABAAAABAAAAABAAAAAQAAACEAAAA=</a:base64Binary></SWComponentPIDs><SWMainComponentPID i:nil="true"/><Visual z:Ref="i16"/><isFixedFrame>false</isFixedFrame><isIncomplete>false</isIncomplete></Link>
+2021-05-13 15:03:36,700 INFO  AssemblyExportForm.cs: 308 - Saving URDF package to C:\Users\lenovo\Desktop\ag95_grip_bowl
+2021-05-13 15:03:36,702 INFO  ExportHelper.cs: 147 - Beginning the export process
+2021-05-13 15:03:36,704 INFO  ExportHelper.cs: 153 - Creating package directories with name ag95_grip_bowl and save path C:\Users\lenovo\Desktop
+2021-05-13 15:03:38,247 INFO  ExportHelper.cs: 162 - Creating CMakeLists.txt at C:\Users\lenovo\Desktop\ag95_grip_bowl\CMakeLists.txt
+2021-05-13 15:03:38,249 INFO  ExportHelper.cs: 166 - Creating joint names config at C:\Users\lenovo\Desktop\ag95_grip_bowl\config\joint_names_ag95_grip_bowl.yaml
+2021-05-13 15:03:38,251 INFO  ExportHelper.cs: 170 - Creating package.xml at C:\Users\lenovo\Desktop\ag95_grip_bowl\package.xml
+2021-05-13 15:03:38,251 INFO  PackageXMLWriter.cs: 21 - Creating package.xml at C:\Users\lenovo\Desktop\ag95_grip_bowl\package.xml
+2021-05-13 15:03:38,254 INFO  ExportHelper.cs: 177 - Creating RVIZ launch file in C:\Users\lenovo\Desktop\ag95_grip_bowl\launch\
+2021-05-13 15:03:38,256 INFO  ExportHelper.cs: 182 - Creating Gazebo launch file in C:\Users\lenovo\Desktop\ag95_grip_bowl\launch\
+2021-05-13 15:03:38,257 INFO  ExportHelper.cs: 187 - Saving existing STL preferences
+2021-05-13 15:03:38,257 INFO  ExportHelper.cs: 451 - Saving users preferences
+2021-05-13 15:03:38,258 INFO  ExportHelper.cs: 190 - Modifying STL preferences
+2021-05-13 15:03:38,258 INFO  ExportHelper.cs: 465 - Setting STL preferences
+2021-05-13 15:03:38,262 INFO  ExportHelper.cs: 196 - Found 0 hidden components 
+2021-05-13 15:03:38,262 INFO  ExportHelper.cs: 197 - Hiding all components
+2021-05-13 15:03:38,467 INFO  ExportHelper.cs: 204 - Beginning individual files export
+2021-05-13 15:03:38,468 INFO  ExportHelper.cs: 270 - Exporting link: ad95_grip_base_link
+2021-05-13 15:03:38,468 INFO  ExportHelper.cs: 272 - Link ad95_grip_base_link has 1 children
+2021-05-13 15:03:38,468 INFO  ExportHelper.cs: 270 - Exporting link: grip_tip_link
+2021-05-13 15:03:38,469 INFO  ExportHelper.cs: 272 - Link grip_tip_link has 0 children
+2021-05-13 15:03:38,469 INFO  ExportHelper.cs: 318 - grip_tip_link: Exporting STL with coordinate frame 坐标系2
+2021-05-13 15:03:38,470 INFO  ExportHelper.cs: 323 - grip_tip_link: Reference geometry name 
+2021-05-13 15:03:38,532 INFO  ExportHelper.cs: 331 - Saving STL to C:\Users\lenovo\Desktop\ag95_grip_bowl\meshes\grip_tip_link.STL
+2021-05-13 15:03:38,985 INFO  ExportHelper.cs: 406 - Removing SW header in STL file
+2021-05-13 15:03:38,986 INFO  ExportHelper.cs: 318 - ad95_grip_base_link: Exporting STL with coordinate frame 坐标系1
+2021-05-13 15:03:38,986 INFO  ExportHelper.cs: 323 - ad95_grip_base_link: Reference geometry name 
+2021-05-13 15:03:39,224 INFO  ExportHelper.cs: 331 - Saving STL to C:\Users\lenovo\Desktop\ag95_grip_bowl\meshes\ad95_grip_base_link.STL
+2021-05-13 15:03:40,985 INFO  ExportHelper.cs: 406 - Removing SW header in STL file
+2021-05-13 15:03:40,986 INFO  ExportHelper.cs: 145 - Showing all components except previously hidden components
+2021-05-13 15:03:41,239 INFO  ExportHelper.cs: 145 - Resetting STL preferences
+2021-05-13 15:03:41,240 INFO  ExportHelper.cs: 479 - Returning STL preferences to user preferences
+2021-05-13 15:03:41,240 INFO  ExportHelper.cs: 228 - Writing URDF file to C:\Users\lenovo\Desktop\ag95_grip_bowl\urdf\ag95_grip_bowl.urdf
+2021-05-13 15:03:41,247 INFO  CSVImportExport.cs: 32 - Writing CSV file C:\Users\lenovo\Desktop\ag95_grip_bowl\urdf\ag95_grip_bowl.csv
+2021-05-13 15:03:41,267 ERROR CSVImportExport.cs: 132 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2021-05-13 15:03:41,268 ERROR CSVImportExport.cs: 132 - The following columns were not written to the CSV: Link.Joint.ChildLink.link,
+2021-05-13 15:03:41,269 INFO  ExportHelper.cs: 234 - Copying log file
+2021-05-13 15:03:41,272 INFO  ExportHelper.cs: 440 - Copying C:\Users\lenovo\sw2urdf_logs\sw2urdf.log to C:\Users\lenovo\Desktop\ag95_grip_bowl\export.log
