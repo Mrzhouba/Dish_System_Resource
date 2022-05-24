@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="car6">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="4.02122942777527E-07 3.44169137633799E-15 0.00212528127877701"
+        rpy="0 0 0" />
+      <mass
+        value="2.19507335899911" />
+      <inertia
+        ixx="0.0436806825633892"
+        ixy="-5.08655266646313E-06"
+        ixz="-3.34444135411209E-17"
+        iyy="0.0455253476297357"
+        iyz="-1.22445531747282E-16"
+        izz="0.0891232981698546" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0 0.015 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.196670527636265" />
+      <inertia
+        ixx="0.00012319074315568"
+        ixy="1.68055485182223E-21"
+        ixz="5.68270902369089E-22"
+        iyy="0.000221934036274288"
+        iyz="-2.99013335426208E-20"
+        izz="0.00012319074315568" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="-0.37 -0.2765 0.022"
+      rpy="0 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="1.11022302462516E-16 0.00555555555555555 8.32667268468867E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.196670527636265" />
+      <inertia
+        ixx="0.00012319074315568"
+        ixy="-1.88078947842729E-20"
+        ixz="2.0545131216551E-22"
+        iyy="0.000221934036274288"
+        iyz="-1.86019000446159E-20"
+        izz="0.00012319074315568" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0.37 -0.28594 0.022"
+      rpy="0 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-1.11022302462516E-16 0.00555555555555559 5.55111512312578E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.196670527636265" />
+      <inertia
+        ixx="0.00012319074315568"
+        ixy="-8.41242213867249E-21"
+        ixz="6.34199391620153E-22"
+        iyy="0.000221934036274288"
+        iyz="6.59046589990345E-20"
+        izz="0.00012319074315568" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0.37 0.28594 0.022"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="1.38777878078145E-17 -0.00555555555555542 -2.77555756156289E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.196670527636265" />
+      <inertia
+        ixx="0.00012319074315568"
+        ixy="-2.41157420217329E-21"
+        ixz="3.0147920638297E-22"
+        iyy="0.000221934036274288"
+        iyz="7.15576279845473E-20"
+        izz="0.00012319074315568" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="-0.37 0.29706 0.022"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="100"
+      velocity="1" />
+  </joint>
+  <link
+    name="fix_link">
+    <inertial>
+      <origin
+        xyz="-0.00205175959116993 0.00354919045860191 0.230032668804987"
+        rpy="0 0 0" />
+      <mass
+        value="96.1246042097922" />
+      <inertia
+        ixx="1.91388330168671"
+        ixy="-2.38360107290611E-05"
+        ixz="-2.0468759548067E-17"
+        iyy="0.911239224486908"
+        iyz="-5.55860947911324E-15"
+        izz="1.93441225874395" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/fix_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://car6/meshes/fix_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fix_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fix_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
