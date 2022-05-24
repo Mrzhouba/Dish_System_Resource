@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Initial_Form</class>
+ <widget class="QWidget" name="Initial_Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>755</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>370</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+   </property>
+   <property name="text">
+    <string>     Note</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>271</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>启动</string>
+   </property>
+   <widget class="MyLed" name="Led">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>20</y>
+      <width>99</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sys_end">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>99</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:gray;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>END</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sys_start">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>99</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255,96,96);border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>START</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="start_with_car_power_button">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>小车上电</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="aruco_label">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>50</y>
+     <width>400</width>
+     <height>300</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 2px;border-style: solid;border-color: rgb(255, 170, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="move_control">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>210</y>
+     <width>261</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="title">
+    <string>功能测试</string>
+   </property>
+   <widget class="Car_Forward_button" name="car_forward">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>99</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:gray;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>Car++</string>
+    </property>
+   </widget>
+   <widget class="Convey_Backward_button" name="convey_back">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>80</y>
+      <width>99</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:gray;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>Convey--</string>
+    </property>
+   </widget>
+   <widget class="Convey_Forward_button" name="convey_forward">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>99</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:gray;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>Convey++</string>
+    </property>
+   </widget>
+   <widget class="Car_Backward_button" name="car_back">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>130</y>
+      <width>99</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:gray;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>Car--</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="power_switch">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>99</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(178,34,34);border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>power_on</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="drop_bowl">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>221</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:lightblue;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>drop bowl</string>
+    </property>
+   </widget>
+   <widget class="MyLed" name="power_led">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>20</y>
+      <width>99</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTextBrowser" name="Initial_messgae_txt">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>411</y>
+     <width>401</width>
+     <height>171</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>10</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+   </property>
+   <property name="text">
+    <string>     相机画面</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clear_initial_txt">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>370</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+   </property>
+   <property name="text">
+    <string>Clear</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="save_initial_txt">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>370</y>
+     <width>101</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>440</y>
+     <width>261</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>复位</string>
+   </property>
+   <widget class="QPushButton" name="UR10_to_zero">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>99</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:gray;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>UR10复位</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="recognize_mark_button">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>99</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:gray;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>识别标签</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="car_to_zero_button">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>80</y>
+      <width>99</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:gray;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>小车回零</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="UR3_to_zero">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>99</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:gray;border-radius: 10px; border: 2px groove gray;border-style: outset;</string>
+    </property>
+    <property name="text">
+     <string>UR3复位</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Car_Forward_button</class>
+   <extends>QPushButton</extends>
+   <header>Custom_Control</header>
+  </customwidget>
+  <customwidget>
+   <class>Car_Backward_button</class>
+   <extends>QPushButton</extends>
+   <header>Custom_Control</header>
+  </customwidget>
+  <customwidget>
+   <class>Convey_Forward_button</class>
+   <extends>QPushButton</extends>
+   <header>Custom_Control</header>
+  </customwidget>
+  <customwidget>
+   <class>Convey_Backward_button</class>
+   <extends>QPushButton</extends>
+   <header>Custom_Control</header>
+  </customwidget>
+  <customwidget>
+   <class>MyLed</class>
+   <extends>QPushButton</extends>
+   <header>Custom_Control</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
