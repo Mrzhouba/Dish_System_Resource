@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro"
+       name="FTS300">
+
+  <link
+    name="ft300_base_link">
+    <inertial>
+      <origin
+        xyz="0.0010572 -4.2533E-05 0.0090461"
+        rpy="0 0 0" />
+      <mass
+        value="0.087057" />
+      <inertia
+        ixx="5.0078E-05"
+        ixy="1.5999E-07"
+        ixz="4.9014E-07"
+        iyy="4.6121E-05"
+        iyz="1.9479E-08"
+        izz="9.1789E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://FTS300/meshes/ft300_base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://FTS300/meshes/ft300_base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="ft300_body_link">
+    <inertial>
+      <origin
+        xyz="-0.00012072 -2.6655E-07 -0.0080141"
+        rpy="0 0 0" />
+      <mass
+        value="0.03538" />
+      <inertia
+        ixx="1.4211E-05"
+        ixy="2.1988E-08"
+        ixz="-3.2052E-09"
+        iyy="1.3991E-05"
+        iyz="-3.4636E-11"
+        izz="2.7039E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://FTS300/meshes/ft300_body_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://FTS300/meshes/ft300_body_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ft300_body_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.0385"
+      rpy="0 0 0" />
+    <parent
+      link="ft300_base_link" />
+    <child
+      link="ft300_body_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

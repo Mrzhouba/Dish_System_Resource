@@ -1,0 +1,32 @@
+<launch>
+    <!-- 启动AG-95控制节点 -->
+    <!-- <include file="$(find dh_hand_driver)/launch/dh_hand_controller.launch" /> -->
+    
+    <!-- 连接UR3UR10机械臂 -->
+    <include file="$(find dual_arm_car_grippers_modern_driver)/launch/ros_control/dual_arm_car_grippers_fts_metal_ros_control_alone.launch" >
+    <arg name="limited_ur3" default="true"/>
+    <arg name="limited_ur10" default="true"/>
+    </include>
+
+
+
+    <!-- 启动机械臂可视化界面 
+    <include file="$(find dual_arm_robot_car_grippers_moveit_config)/launch/moveit_rviz.launch">
+      <arg name="config" default="true"/>
+    </include>-->
+
+    <node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
+      <rosparam file="$(find car6)/config/fake_car_arbotix.yaml" command="load" />
+      <param name="sim" value="true"/>
+    </node>
+
+    <!-- 发布机械臂从ur3_base_link到camera1_link的坐标转换 
+    <include file="$(find easy_handeye)/launch/bowl_publish.launch" />-->
+
+    <!--<include file="$(find easy_handeye)/launch/to_left_vegetable_publish.launch" />-->
+    <include file="$(find dual_arm_car_grippers_modern_driver)/launch/separate_joint_states_ros_control.launch" />
+
+    <!-- 启动realsense相机 -->
+    <!-- <include file="$(find realsense2_camera)/launch/rs_camera.launch" /> -->
+    
+</launch>

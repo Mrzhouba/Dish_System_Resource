@@ -1,0 +1,14 @@
+<launch>
+  <arg name="sim" default="false" />
+  <arg name="debug" default="false" />
+  <rosparam command="load" file="$(find only_ur10_gripper_moveit_config)/config/joint_names.yaml"/>
+  <!-- Remap follow_joint_trajectory -->
+  
+  <remap if="$(arg sim)" from="ur10/follow_joint_trajectory" to="ur10_arm_controller/follow_joint_trajectory"/>
+
+  <!-- Launch moveit -->
+  <include file="$(find only_ur10_gripper_moveit_config)/launch/ros_move_group.launch">
+    <arg name="debug" default="$(arg debug)" />
+  </include>
+
+</launch>

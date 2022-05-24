@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="limited_ur3" default="false"/>
+  <arg name="limited_ur10" default="false"/>
+  <arg name="prefix_ur3" default="ur3_"/>
+  <arg name="prefix_ur10" default="ur10_"/>
+
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find ur3ur10car)/urdf/dual_arm_robot_car_grippers_metal.urdf.xacro' prefix_ur3:=$(arg prefix_ur3) prefix_ur10:=$(arg prefix_ur10) limited_ur3:=$(arg limited_ur3) limited_ur10:=$(arg limited_ur10)"/>
+</launch>

@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<!--
+  Universal robot ur3 launch.  Loads ur3 robot description (see ur_common.launch
+  for more info)
+
+  Usage:
+    ur3_bringup.launch robot_ip:=<value>
+-->
+<launch>
+
+  <!-- robot_ip: IP-address of the robot's socket-messaging server -->
+  <arg name="ip_ur3" default="192.168.1.185"/>
+  <arg name="ip_ur10" default="192.168.1.186"/>
+  <arg name="limited_ur3" default="false"/>
+  <arg name="limited_ur10" default="false"/>
+  <arg name="min_payload_ur3"  default="0.0"/>
+  <arg name="max_payload_ur3"  default="3.0"/>
+  <arg name="min_payload_ur10"  default="0.0"/>
+  <arg name="max_payload_ur10"  default="10.0"/>
+  <arg name="prefix_ur3" default="ur3_" />
+  <arg name="prefix_ur10" default="ur10_" />
+  <arg name="controller_name_ur3" default="ur3"/>
+  <arg name="controller_name_ur10" default="ur10"/>
+
+  <!-- <arg name="prefix" default="" /> -->
+  <!-- robot model -->
+  <!-- <include file="$(find ur3ur10_modern_driver)/launch/ur3ur10_upload.launch"> -->
+    <!-- <arg name="limited" value="$(arg limited)"/> -->
+  <!-- </include> -->
+
+  <!-- ur common -->
+  <!-- <include file="$(find ur_modern_driver)/launch/ur_common.launch">
+    <arg name="robot_ip" value="$(arg robot_ip)"/>
+    <arg name="min_payload"  value="$(arg min_payload)"/>
+    <arg name="max_payload"  value="$(arg max_payload)"/>
+    <arg name="prefix" value="$(arg prefix)" />
+  </include> -->
+  
+    <!-- dual_arm_robot model -->
+  <include file="$(find dual_arm_car_grippers_modern_driver)/launch/dual_arm_car_grippers_upload.launch">
+    <arg name="limited_ur3" value="$(arg limited_ur3)"/>
+    <arg name="prefix_ur3" value="$(arg prefix_ur3)"/>
+    <arg name="limited_ur10" value="$(arg limited_ur10)"/>
+    <arg name="prefix_ur10" value="$(arg prefix_ur10)"/>
+  </include>
+  
+  
+  <!-- ur3 common -->
+  <group ns="$(arg controller_name_ur3)">
+    <!-- <param name="ur_driver/reverse_port" type="int" value="5001"/> -->
+    <remap from="joint_states" to="/joint_states"/>
+    <include file="$(find dual_arm_car_grippers_modern_driver)/launch/ur3_common.launch">
+      <arg name="prefix"  value="$(arg prefix_ur3)" />
+      <arg name="robot_ip" value="$(arg ip_ur3)"/>
+      <arg name="min_payload"  value="$(arg min_payload_ur3)"/>
+      <arg name="max_payload"  value="$(arg max_payload_ur3)"/>
+    </include>
+  </group>
+
+
+  <!-- ur10 common -->
+  <group ns="$(arg controller_name_ur10)">
+    <param name="ur_driver1/reverse_port" type="int" value="50002"/> <!-- must be set different to the instance of the ur5, default is 5001-->
+    <remap from="joint_states" to="/joint_states"/>
+    <include file="$(find dual_arm_car_grippers_modern_driver)/launch/ur10_common.launch">
+      <arg name="prefix"  value="$(arg prefix_ur10)" />
+      <arg name="robot_ip" value="$(arg ip_ur10)"/>
+      <arg name="min_payload"  value="$(arg min_payload_ur10)"/>
+      <arg name="max_payload"  value="$(arg max_payload_ur10)"/>
+    </include>
+  </group>
+
+
+
+  <!--node name="ur3_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="use_gui" value="false"/>
+    <rosparam param="source_list">[/ur3_move_group/ur3_joint_state]</rosparam>
+  </node>
+
+  <node name="ur10_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+    <param name="use_gui" value="false"/>
+    <rosparam param="source_list">[/ur10_move_group/ur10_joint_state]</rosparam>
+  </node>
+
+ <node name="ur3_robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+ <node name="ur10_robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /-->
+
+
+
+</launch>

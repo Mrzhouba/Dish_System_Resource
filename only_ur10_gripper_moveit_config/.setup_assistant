@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ur3ur10car
+    relative_path: urdf/only_ur10_gripper.xacro
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/only_ur10_gripper.srdf
+  CONFIG:
+    author_name: gs
+    author_email: gs@163.com
+    generated_timestamp: 1622535372

@@ -1,0 +1,817 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /MotionPlanning1
+        - /MotionPlanning1/Planning Request1
+        - /TF1
+        - /TF1/Frames1
+        - /PointCloud21
+      Splitter Ratio: 0.742560029
+    Tree Height: 427
+  - Class: rviz/Help
+    Name: Help
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.0299999993
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Acceleration_Scaling_Factor: 0.10000000000000001
+      Class: moveit_rviz_plugin/MotionPlanning
+      Enabled: true
+      Move Group Namespace: ""
+      MoveIt_Allow_Approximate_IK: false
+      MoveIt_Allow_External_Program: false
+      MoveIt_Allow_Replanning: false
+      MoveIt_Allow_Sensor_Positioning: false
+      MoveIt_Goal_Tolerance: 0
+      MoveIt_Planning_Attempts: 10
+      MoveIt_Planning_Time: 5
+      MoveIt_Use_Constraint_Aware_IK: true
+      MoveIt_Warehouse_Host: 127.0.0.1
+      MoveIt_Warehouse_Port: 33829
+      MoveIt_Workspace:
+        Center:
+          X: 0
+          Y: 0
+          Z: 0
+        Size:
+          X: 2
+          Y: 2
+          Z: 2
+      Name: MotionPlanning
+      Planned Path:
+        Color Enabled: false
+        Interrupt Display: false
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          ag95_grip_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          body_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera2_bottom_screw_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_color_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_color_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_depth_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_depth_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_left_ir_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_left_ir_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera2_right_ir_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_right_ir_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          desk:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fix_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ft300_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ft300_body_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          grip_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          realsense_d435_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          spoon_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          spoon_body:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ur10_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_forearm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_shoulder_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_tool0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ur10_upper_arm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_wrist_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_wrist_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_wrist_3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ur3_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_forearm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_shoulder_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_tool0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ur3_upper_arm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_wrist_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_wrist_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_wrist_3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+        Loop Animation: true
+        Robot Alpha: 0.5
+        Robot Color: 150; 50; 150
+        Show Robot Collision: false
+        Show Robot Visual: true
+        Show Trail: false
+        State Display Time: 0.05 s
+        Trail Step Size: 1
+        Trajectory Topic: move_group/display_planned_path
+      Planning Metrics:
+        Payload: 1
+        Show Joint Torques: false
+        Show Manipulability: false
+        Show Manipulability Index: false
+        Show Weight Limit: false
+        TextHeight: 0.0799999982
+      Planning Request:
+        Colliding Link Color: 255; 0; 0
+        Goal State Alpha: 1
+        Goal State Color: 250; 128; 0
+        Interactive Marker Size: 0.200000003
+        Joint Violation Color: 255; 0; 255
+        Planning Group: ur10_with_gripper
+        Query Goal State: true
+        Query Start State: false
+        Show Workspace: false
+        Start State Alpha: 1
+        Start State Color: 0; 255; 0
+      Planning Scene Topic: move_group/monitored_planning_scene
+      Robot Description: robot_description
+      Scene Geometry:
+        Scene Alpha: 1
+        Scene Color: 50; 230; 50
+        Scene Display Time: 0.200000003
+        Show Scene Geometry: true
+        Voxel Coloring: Z-Axis
+        Voxel Rendering: Occupied Voxels
+      Scene Robot:
+        Attached Body Color: 150; 50; 150
+        Links:
+          All Links Enabled: true
+          Expand Joint Details: false
+          Expand Link Details: false
+          Expand Tree: false
+          Link Tree Style: Links in Alphabetic Order
+          ag95_grip_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          body_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera2_bottom_screw_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_color_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_color_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_depth_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_depth_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_left_ir_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_left_ir_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          camera2_right_ir_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          camera2_right_ir_optical_frame:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          desk:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          fix_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ft300_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ft300_body_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          grip_tip_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link1:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link2:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link3:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          link4:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          realsense_d435_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          spoon_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          spoon_body:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ur10_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_forearm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_shoulder_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_tool0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ur10_upper_arm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_wrist_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_wrist_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur10_wrist_3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_base:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ur3_base_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_ee_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_forearm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_shoulder_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_tool0:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+          ur3_upper_arm_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_wrist_1_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_wrist_2_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+          ur3_wrist_3_link:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
+        Robot Alpha: 0.5
+        Show Robot Collision: false
+        Show Robot Visual: true
+      Value: true
+      Velocity_Scaling_Factor: 0.10000000000000001
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: false
+        ag95_grip_base_link:
+          Value: false
+        aruco_marker_frame:
+          Value: true
+        body_link:
+          Value: false
+        camera2_aligned_depth_to_color_frame:
+          Value: false
+        camera2_aligned_depth_to_infra1_frame:
+          Value: false
+        camera2_bottom_screw_frame:
+          Value: false
+        camera2_color_frame:
+          Value: false
+        camera2_color_optical_frame:
+          Value: false
+        camera2_depth_frame:
+          Value: false
+        camera2_depth_optical_frame:
+          Value: false
+        camera2_infra1_frame:
+          Value: false
+        camera2_infra1_optical_frame:
+          Value: false
+        camera2_infra2_frame:
+          Value: false
+        camera2_infra2_optical_frame:
+          Value: false
+        camera2_left_ir_frame:
+          Value: false
+        camera2_left_ir_optical_frame:
+          Value: false
+        camera2_link:
+          Value: false
+        camera2_right_ir_frame:
+          Value: false
+        camera2_right_ir_optical_frame:
+          Value: false
+        desk:
+          Value: false
+        fix_link:
+          Value: false
+        ft300_base_link:
+          Value: false
+        ft300_body_link:
+          Value: false
+        grip_tip_link:
+          Value: false
+        link1:
+          Value: false
+        link2:
+          Value: false
+        link3:
+          Value: false
+        link4:
+          Value: false
+        realsense_d435_base_link:
+          Value: false
+        spoon_base_link:
+          Value: false
+        spoon_body:
+          Value: false
+        ur10_base:
+          Value: false
+        ur10_base_link:
+          Value: false
+        ur10_ee_link:
+          Value: false
+        ur10_forearm_link:
+          Value: false
+        ur10_shoulder_link:
+          Value: false
+        ur10_tool0:
+          Value: false
+        ur10_tool0_controller:
+          Value: false
+        ur10_upper_arm_link:
+          Value: false
+        ur10_wrist_1_link:
+          Value: false
+        ur10_wrist_2_link:
+          Value: false
+        ur10_wrist_3_link:
+          Value: false
+        ur3_base:
+          Value: false
+        ur3_base_link:
+          Value: false
+        ur3_ee_link:
+          Value: false
+        ur3_forearm_link:
+          Value: false
+        ur3_shoulder_link:
+          Value: false
+        ur3_tool0:
+          Value: false
+        ur3_tool0_controller:
+          Value: false
+        ur3_upper_arm_link:
+          Value: false
+        ur3_wrist_1_link:
+          Value: false
+        ur3_wrist_2_link:
+          Value: false
+        ur3_wrist_3_link:
+          Value: false
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        body_link:
+          desk:
+            {}
+          fix_link:
+            {}
+          link1:
+            {}
+          link2:
+            {}
+          link3:
+            {}
+          link4:
+            {}
+          ur10_base_link:
+            ur10_base:
+              {}
+            ur10_shoulder_link:
+              ur10_upper_arm_link:
+                ur10_forearm_link:
+                  ur10_wrist_1_link:
+                    ur10_wrist_2_link:
+                      ur10_wrist_3_link:
+                        ur10_ee_link:
+                          ft300_base_link:
+                            ft300_body_link:
+                              spoon_base_link:
+                                realsense_d435_base_link:
+                                  camera2_bottom_screw_frame:
+                                    camera2_link:
+                                      aruco_marker_frame:
+                                        {}
+                                      camera2_aligned_depth_to_color_frame:
+                                        camera2_color_optical_frame:
+                                          {}
+                                      camera2_aligned_depth_to_infra1_frame:
+                                        camera2_infra1_optical_frame:
+                                          {}
+                                      camera2_color_frame:
+                                        {}
+                                      camera2_depth_frame:
+                                        camera2_depth_optical_frame:
+                                          {}
+                                        camera2_left_ir_frame:
+                                          camera2_left_ir_optical_frame:
+                                            {}
+                                        camera2_right_ir_frame:
+                                          camera2_right_ir_optical_frame:
+                                            {}
+                                      camera2_infra1_frame:
+                                        {}
+                                      camera2_infra2_frame:
+                                        camera2_infra2_optical_frame:
+                                          {}
+                                spoon_body:
+                                  {}
+                        ur10_tool0:
+                          {}
+            ur10_tool0_controller:
+              {}
+          ur3_base_link:
+            ur3_base:
+              {}
+            ur3_shoulder_link:
+              ur3_upper_arm_link:
+                ur3_forearm_link:
+                  ur3_wrist_1_link:
+                    ur3_wrist_2_link:
+                      ur3_wrist_3_link:
+                        ur3_ee_link:
+                          ag95_grip_base_link:
+                            grip_tip_link:
+                              {}
+                        ur3_tool0:
+                          {}
+            ur3_tool0_controller:
+              {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 255; 255; 255
+      Color Transformer: RGB8
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 4096
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 3
+      Size (m): 0.00999999978
+      Style: Flat Squares
+      Topic: /camera2/depth/color/points
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: body_link
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+  Value: true
+  Views:
+    Current:
+      Class: rviz/XYOrbit
+      Distance: 3.71829987
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.0599999987
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0.377310812
+        Y: -0.899917603
+        Z: 2.23518001e-07
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.0500000007
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.00999999978
+      Pitch: 0.239795431
+      Target Frame: body_link
+      Value: XYOrbit (rviz)
+      Yaw: 1.78677201
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1056
+  Help:
+    collapsed: false
+  Hide Left Dock: false
+  Hide Right Dock: false
+  MotionPlanning:
+    collapsed: false
+  MotionPlanning - Trajectory Slider:
+    collapsed: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002ad000003dafc0200000007fb000000100044006900730070006c0061007900730100000028000001ec000000d700fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a0056006900650077007300000003b0000000b0000000ad00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004a00fffffffb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000021a000001e80000018300ffffff000004cd000003da00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Views:
+    collapsed: false
+  Width: 1920
+  X: 0
+  Y: 24

@@ -1,0 +1,304 @@
+<?xml version="1.0" ?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="dual_arm_robot_car_grippers">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="ur3">
+        <chain base_link="ur3_base_link" tip_link="ur3_ee_link" />
+    </group>
+    <group name="ur10">
+        <chain base_link="ur10_base_link" tip_link="ur10_ee_link" />
+    </group>
+    <group name="ur3_ur10">
+        <group name="ur3" />
+        <group name="ur10" />
+    </group>
+    <group name="spoon_gripper">
+        <chain base_link="spoon_base_link" tip_link="spoon_body" />
+    </group>
+    <group name="ur10_with_gripper">
+        <group name="ur10" />
+        <group name="spoon_gripper" />
+    </group>
+    <group name="ag95_gripper">
+        <chain base_link="ag95_grip_base_link" tip_link="grip_tip_link" />
+    </group>
+    <group name="ur3_with_gripper">
+        <group name="ur3" />
+        <group name="ag95_gripper" />
+    </group>
+    <group name="all">
+        <group name="ur3" />
+        <group name="ur10" />
+        <group name="spoon_gripper" />
+        <group name="ag95_gripper" />
+    </group>
+
+    <!--PASSIVE JOINT: Purpose: this element is used to mark joints that are not actuated-->
+    <passive_joint name="joint1" />
+    <passive_joint name="joint2" />
+    <passive_joint name="joint3" />
+    <passive_joint name="joint4" />
+    <passive_joint name="spoon_joint" />
+    <passive_joint name="grip_tip_joint" />
+
+    <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
+    <group_state name="ur3_up" group="ur3">
+        <joint name="ur3_elbow_joint" value="0" />
+        <joint name="ur3_shoulder_lift_joint" value="-1.57" />
+        <joint name="ur3_shoulder_pan_joint" value="0" />
+        <joint name="ur3_wrist_1_joint" value="0" />
+        <joint name="ur3_wrist_2_joint" value="0" />
+        <joint name="ur3_wrist_3_joint" value="0" />
+    </group_state>
+    <group_state name="ur10_up" group="ur10">
+        <joint name="ur10_elbow_joint" value="0" />
+        <joint name="ur10_shoulder_lift_joint" value="-1.57" />
+        <joint name="ur10_shoulder_pan_joint" value="0" />
+        <joint name="ur10_wrist_1_joint" value="0" />
+        <joint name="ur10_wrist_2_joint" value="0" />
+        <joint name="ur10_wrist_3_joint" value="0" />
+    </group_state>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="spoon_gripper" parent_link="ur10_ee_link" group="spoon_gripper" parent_group="ur10" />
+    <end_effector name="ag95_gripper" parent_link="ur3_ee_link" group="ag95_gripper" parent_group="ur3" />
+    <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot could potentially come into collision with any other link in the robot. This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="ag95_grip_base_link" link2="body_link" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="grip_tip_link" reason="Adjacent" />
+    <disable_collisions link1="ag95_grip_base_link" link2="link1" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="link2" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="link3" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="link4" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="ur10_base_link" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="ur10_ee_link" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="ur10_shoulder_link" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="ur10_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="ur10_wrist_3_link" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="ur3_ee_link" reason="Adjacent" />
+    <disable_collisions link1="ag95_grip_base_link" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ag95_grip_base_link" link2="ur3_wrist_3_link" reason="Default" />
+    <disable_collisions link1="body_link" link2="fix_link" reason="Adjacent" />
+    <disable_collisions link1="body_link" link2="grip_tip_link" reason="Never" />
+    <disable_collisions link1="body_link" link2="link1" reason="Adjacent" />
+    <disable_collisions link1="body_link" link2="link2" reason="Adjacent" />
+    <disable_collisions link1="body_link" link2="link3" reason="Adjacent" />
+    <disable_collisions link1="body_link" link2="link4" reason="Adjacent" />
+    <disable_collisions link1="body_link" link2="ur10_base_link" reason="Adjacent" />
+    <disable_collisions link1="body_link" link2="ur10_shoulder_link" reason="Never" />
+    <disable_collisions link1="body_link" link2="ur10_upper_arm_link" reason="Never" />
+    <disable_collisions link1="body_link" link2="ur10_wrist_1_link" reason="Never" />
+    <disable_collisions link1="body_link" link2="ur3_base_link" reason="Adjacent" />
+    <disable_collisions link1="body_link" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="body_link" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="body_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="body_link" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="body_link" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="body_link" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="body_link" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="fix_link" link2="link1" reason="Never" />
+    <disable_collisions link1="fix_link" link2="link2" reason="Never" />
+    <disable_collisions link1="fix_link" link2="link3" reason="Never" />
+    <disable_collisions link1="fix_link" link2="link4" reason="Never" />
+    <disable_collisions link1="fix_link" link2="ur10_base_link" reason="Default" />
+    <disable_collisions link1="fix_link" link2="ur10_shoulder_link" reason="Never" />
+    <disable_collisions link1="fix_link" link2="ur10_upper_arm_link" reason="Never" />
+    <disable_collisions link1="fix_link" link2="ur3_base_link" reason="Default" />
+    <disable_collisions link1="fix_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="fix_link" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="link1" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="link2" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="link3" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="link4" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="ur10_base_link" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="ur10_ee_link" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="ur10_wrist_2_link" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="ur10_wrist_3_link" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="grip_tip_link" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="link1" link2="link2" reason="Never" />
+    <disable_collisions link1="link1" link2="link3" reason="Never" />
+    <disable_collisions link1="link1" link2="link4" reason="Never" />
+    <disable_collisions link1="link1" link2="spoon_base_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur10_base_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur10_ee_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur10_shoulder_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur10_upper_arm_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur10_wrist_1_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur10_wrist_2_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur10_wrist_3_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="link1" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="link2" link2="link3" reason="Never" />
+    <disable_collisions link1="link2" link2="link4" reason="Never" />
+    <disable_collisions link1="link2" link2="ur10_base_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur10_ee_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur10_forearm_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur10_shoulder_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur10_upper_arm_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur10_wrist_1_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="link2" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="link3" link2="link4" reason="Never" />
+    <disable_collisions link1="link3" link2="spoon_base_link" reason="Never" />
+    <disable_collisions link1="link3" link2="spoon_body" reason="Never" />
+    <disable_collisions link1="link3" link2="ur10_base_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur10_ee_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur10_forearm_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur10_shoulder_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur10_upper_arm_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur10_wrist_1_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur10_wrist_2_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur10_wrist_3_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="link3" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="link4" link2="spoon_base_link" reason="Never" />
+    <disable_collisions link1="link4" link2="spoon_body" reason="Never" />
+    <disable_collisions link1="link4" link2="ur10_base_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur10_ee_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur10_forearm_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur10_shoulder_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur10_upper_arm_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur10_wrist_1_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur10_wrist_2_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur10_wrist_3_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="link4" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="spoon_base_link" link2="spoon_body" reason="Adjacent" />
+    <disable_collisions link1="spoon_base_link" link2="ur10_ee_link" reason="Adjacent" />
+    <disable_collisions link1="spoon_base_link" link2="ur10_wrist_1_link" reason="Never" />
+    <disable_collisions link1="spoon_base_link" link2="ur10_wrist_2_link" reason="Never" />
+    <disable_collisions link1="spoon_base_link" link2="ur10_wrist_3_link" reason="Never" />
+    <disable_collisions link1="spoon_base_link" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="spoon_base_link" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="spoon_base_link" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="spoon_base_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="spoon_base_link" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="spoon_body" link2="ur10_ee_link" reason="Never" />
+    <disable_collisions link1="spoon_body" link2="ur10_wrist_1_link" reason="Never" />
+    <disable_collisions link1="spoon_body" link2="ur10_wrist_2_link" reason="Never" />
+    <disable_collisions link1="spoon_body" link2="ur10_wrist_3_link" reason="Never" />
+    <disable_collisions link1="spoon_body" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="spoon_body" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur10_ee_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur10_forearm_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur10_shoulder_link" reason="Adjacent" />
+    <disable_collisions link1="ur10_base_link" link2="ur10_upper_arm_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur10_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur10_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ur10_base_link" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="ur10_ee_link" link2="ur10_shoulder_link" reason="Never" />
+    <disable_collisions link1="ur10_ee_link" link2="ur10_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur10_ee_link" link2="ur10_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ur10_ee_link" link2="ur10_wrist_3_link" reason="Adjacent" />
+    <disable_collisions link1="ur10_ee_link" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="ur10_ee_link" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="ur10_ee_link" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="ur10_ee_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="ur10_ee_link" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="ur10_ee_link" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur10_ee_link" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ur10_ee_link" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="ur10_forearm_link" link2="ur10_shoulder_link" reason="Never" />
+    <disable_collisions link1="ur10_forearm_link" link2="ur10_upper_arm_link" reason="Adjacent" />
+    <disable_collisions link1="ur10_forearm_link" link2="ur10_wrist_1_link" reason="Adjacent" />
+    <disable_collisions link1="ur10_forearm_link" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="ur10_forearm_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="ur10_shoulder_link" link2="ur10_upper_arm_link" reason="Adjacent" />
+    <disable_collisions link1="ur10_shoulder_link" link2="ur10_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur10_shoulder_link" link2="ur10_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ur10_shoulder_link" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="ur10_shoulder_link" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="ur10_shoulder_link" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="ur10_shoulder_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="ur10_shoulder_link" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="ur10_shoulder_link" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur10_shoulder_link" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ur10_shoulder_link" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="ur10_upper_arm_link" link2="ur10_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur10_upper_arm_link" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="ur10_upper_arm_link" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="ur10_upper_arm_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="ur10_upper_arm_link" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_1_link" link2="ur10_wrist_2_link" reason="Adjacent" />
+    <disable_collisions link1="ur10_wrist_1_link" link2="ur10_wrist_3_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_1_link" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_1_link" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_1_link" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_1_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_1_link" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_1_link" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_1_link" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_1_link" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_2_link" link2="ur10_wrist_3_link" reason="Adjacent" />
+    <disable_collisions link1="ur10_wrist_2_link" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_2_link" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_2_link" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_2_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_2_link" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_2_link" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_3_link" link2="ur3_base_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_3_link" link2="ur3_ee_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_3_link" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_3_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_3_link" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="ur10_wrist_3_link" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="ur3_base_link" link2="ur3_forearm_link" reason="Never" />
+    <disable_collisions link1="ur3_base_link" link2="ur3_shoulder_link" reason="Adjacent" />
+    <disable_collisions link1="ur3_base_link" link2="ur3_upper_arm_link" reason="Never" />
+    <disable_collisions link1="ur3_base_link" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur3_base_link" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ur3_ee_link" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur3_ee_link" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ur3_ee_link" link2="ur3_wrist_3_link" reason="Adjacent" />
+    <disable_collisions link1="ur3_forearm_link" link2="ur3_shoulder_link" reason="Never" />
+    <disable_collisions link1="ur3_forearm_link" link2="ur3_upper_arm_link" reason="Adjacent" />
+    <disable_collisions link1="ur3_forearm_link" link2="ur3_wrist_1_link" reason="Adjacent" />
+    <disable_collisions link1="ur3_forearm_link" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ur3_shoulder_link" link2="ur3_upper_arm_link" reason="Adjacent" />
+    <disable_collisions link1="ur3_shoulder_link" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur3_shoulder_link" link2="ur3_wrist_2_link" reason="Never" />
+    <disable_collisions link1="ur3_upper_arm_link" link2="ur3_wrist_1_link" reason="Never" />
+    <disable_collisions link1="ur3_wrist_1_link" link2="ur3_wrist_2_link" reason="Adjacent" />
+    <disable_collisions link1="ur3_wrist_1_link" link2="ur3_wrist_3_link" reason="Never" />
+    <disable_collisions link1="ur3_wrist_2_link" link2="ur3_wrist_3_link" reason="Adjacent" />
+</robot>

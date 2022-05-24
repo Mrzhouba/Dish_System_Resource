@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<launch>
+
+ <group ns="frank">
+   <arg name="limited" default="false"/>
+   <arg name="robot_ip" default="192.168.1.185"/>
+   <arg name="kinematics_config" default="$(find ur_modern_driver)/config/frank_calibration.yaml"/>
+   <arg name="tf_prefix" default="frank_"/>
+
+  <include file="$(find ur_bringup)/launch/ur3_bringup.launch">
+   <arg name="limited" value="$(arg limited)"/>
+   <arg name="robot_ip" value="$(arg robot_ip)"/>
+   <arg name="kinematics_config" value="$(arg kinematics_config)"/>
+   <arg name="reverse_port" value="50003"/>
+   <arg name="script_sender_port" value="50004"/>
+   <arg name="tf_prefix" value="frank_"/>
+  </include>
+ </group>
+
+ <group ns="klaus">
+   <arg name="limited" default="false"/>
+   <arg name="robot_ip" default="192.168.1.186"/>
+   <arg name="kinematics_config" default="$(find ur_modern_driver)/config/klaus_calibration.yaml"/>
+   <arg name="tf_prefix" default="klaus_"/>
+
+  <include file="$(find ur_robot_driver)/launch/ur5_bringup.launch">
+   <arg name="limited" value="$(arg limited)"/>
+   <arg name="robot_ip" value="$(arg robot_ip)"/>
+   <arg name="kinematics_config" value="$(arg kinematics_config)"/>
+   <arg name="reverse_port" value="50001"/>
+   <arg name="script_sender_port" value="50002"/>
+   <arg name="tf_prefix" value="klaus_"/>
+  </include>
+ </group>
+
+
+
+</launch>

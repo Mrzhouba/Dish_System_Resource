@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="dual_arm_car_grippers_modern_driver" name="wrench_test" type="Wrench_plot.py" output="screen">
+	</node>
+
+
+</launch>

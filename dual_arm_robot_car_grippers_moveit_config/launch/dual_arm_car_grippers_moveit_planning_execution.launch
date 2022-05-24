@@ -1,0 +1,20 @@
+<launch>
+  <arg name="sim" default="false" />
+  <arg name="debug" default="false" />
+    
+  <!-- Remap follow_joint_trajectory -->
+  <remap if="$(arg sim)" from="ur3/follow_joint_trajectory" to="ur3_arm_controller/follow_joint_trajectory"/>
+  <remap if="$(arg sim)" from="ur10/follow_joint_trajectory" to="ur10_arm_controller/follow_joint_trajectory"/>
+
+  <!-- Launch moveit -->
+  <include file="$(find dual_arm_robot_car_grippers_moveit_config)/launch/move_group.launch">
+    <arg name="debug" default="$(arg debug)" />
+  </include>
+
+
+
+  <node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
+      <rosparam file="$(find car6)/config/fake_car_arbotix.yaml" command="load" />
+      <param name="sim" value="true"/>
+  </node>
+</launch>

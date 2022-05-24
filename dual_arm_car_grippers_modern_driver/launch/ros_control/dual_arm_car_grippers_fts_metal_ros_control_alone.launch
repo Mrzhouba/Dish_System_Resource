@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- GDB functionality -->
+  <arg name="debug" default="false" />
+  <arg unless="$(arg debug)" name="launch_prefix" value="" />
+  <arg     if="$(arg debug)" name="launch_prefix" value="gdb --ex run --args" />
+
+  <arg name="ip_ur3" default="192.168.20.185"/>
+  <arg name="ip_ur10" default="192.168.20.186"/>
+  <arg name="limited_ur3" default="false"/>
+  <arg name="limited_ur10" default="false"/>
+  <arg name="min_payload_ur3"  default="0.0"/>
+  <arg name="max_payload_ur3"  default="3.0"/>
+  <arg name="min_payload_ur10"  default="0.0"/>
+  <arg name="max_payload_ur10"  default="10.0"/>
+  <arg name="prefix_ur3" default="ur3_" />
+  <arg name="prefix_ur10" default="ur10_" />
+  <arg name="max_velocity" default="10.0"/> <!-- [rad/s] -->
+  <arg name="ur3_base_frame" default="ur3_base" />
+  <arg name="ur3_tool_frame" default="$ur3_tool0_controller" />
+  <arg name="ur10_base_frame" default="ur10_base" />
+  <arg name="ur10_tool_frame" default="$ur10_tool0_controller" />
+
+  <!-- robot model -->
+  <include file="$(find dual_arm_car_grippers_modern_driver)/launch/dual_arm_car_grippers_metal_upload.launch">
+    <arg name="limited_ur3" value="$(arg limited_ur3)"/>
+    <arg name="prefix_ur3" value="$(arg prefix_ur3)"/>
+    <arg name="limited_ur10" value="$(arg limited_ur10)"/>
+    <arg name="prefix_ur10" value="$(arg prefix_ur10)"/>
+  </include>
+
+
+  <include file="$(find dual_arm_robot_car_fts_gripper_moveit_config)/launch/planning_context.launch" />
+
+  <!-- ur3 -->
+  <group ns="ur3">
+      <!-- Load hardware interface -->
+     <remap from="/ur3/joint_states" to="/joint_states"/>
+     <node name="ur_hardware_interface" pkg="ur_modern_driver" type="ur_driver" output="log" launch-prefix="$(arg launch_prefix)">
+         <param name="robot_ip_address" type="str" value="$(arg ip_ur3)"/>
+         <param name="min_payload" type="double" value="$(arg min_payload_ur3)"/>
+         <param name="max_payload" type="double" value="$(arg max_payload_ur3)"/>
+         <param name="max_velocity" type="double" value="$(arg max_velocity)"/>
+         <param name="use_ros_control" type="bool" value="True"/>
+         <param name="servoj_gain" type="double" value="750" />
+         <param name="prefix" value="$(arg prefix_ur3)" />
+         <param name="base_frame" type="str" value="$(arg ur3_base_frame)"/>
+         <param name="tool_frame" type="str" value="$(arg ur3_tool_frame)"/>
+     </node>
+
+     <!-- Load controller settings -->
+     <rosparam file="$(find ur_modern_driver)/config/dual_arm_ur3_controllers.yaml" command="load"/>
+
+     <!-- spawn controller manager -->
+     <node name="ros_control_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+           output="screen" args="joint_state_controller force_torque_sensor_controller        position_based_position_trajectory_controller" />
+     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
+    <include file="$(find dual_arm_robot_car_fts_gripper_moveit_config)/launch/ros_control_ur3_grippers_moveit_planning_execution.launch">
+         <arg name="debug" default="$(arg debug)" />
+    </include>
+
+
+  </group>
+
+
+  <!-- ur10 -->
+  <group>
+      <!-- Load hardware interface -->
+     <remap from="/ur10/joint_states" to="/joint_states"/>
+     <node name="ur_hardware_interface" pkg="ur_modern_driver" type="ur_driver" output="log" launch-prefix="$(arg launch_prefix)">
+         <param name="reverse_port" type="int" value="50002"/>
+         <param name="robot_ip_address" type="str" value="$(arg ip_ur10)"/>
+         <param name="min_payload" type="double" value="$(arg min_payload_ur10)"/>
+         <param name="max_payload" type="double" value="$(arg max_payload_ur10)"/>
+         <param name="max_velocity" type="double" value="$(arg max_velocity)"/>
+         <param name="use_ros_control" type="bool" value="True"/>
+         <param name="servoj_gain" type="double" value="750" />
+         <param name="prefix" value="$(arg prefix_ur10)" />
+         <param name="base_frame" type="str" value="$(arg ur10_base_frame)"/>
+         <param name="tool_frame" type="str" value="$(arg ur10_tool_frame)"/>
+     </node>
+
+     
+
+     <!-- Load controller settings -->
+     <rosparam file="$(find ur_modern_driver)/config/dual_arm_ur10_controllers.yaml" command="load"/>
+
+     <!-- spawn controller manager -->
+     <node name="ros_control_controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+           output="screen" args="joint_state_controller force_torque_sensor_controller        position_based_position_trajectory_controller" />
+
+     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+         <include file="$(find dual_arm_robot_car_fts_gripper_moveit_config)/launch/ros_control_ur10_grippers_moveit_planning_execution.launch">
+           <arg name="debug" default="$(arg debug)" />
+    </include>
+
+  </group>
+
+    <include file="$(find dual_arm_robot_car_fts_gripper_moveit_config)/launch/moveit_rviz.launch">
+       <arg name="config" default="true"/>
+    </include>
+
+</launch>

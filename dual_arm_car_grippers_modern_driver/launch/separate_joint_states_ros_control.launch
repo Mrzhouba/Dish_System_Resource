@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="dual_arm_car_grippers_modern_driver" name="separate_joint_states" type="sperate_joint_state_ros_control.py" output="screen">
+	</node>
+
+
+</launch>
