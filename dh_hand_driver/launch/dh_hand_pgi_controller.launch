@@ -1,0 +1,13 @@
+<launch>
+  <arg name="Baudrate" default="115200"/>
+  <param name="Hand_Model" type="string" value="RGI"/>
+  <!-- via USB -->
+  <!--<param name="Connect_port" type="string" value="/dev/DH_hand"/>-->
+  <!-- via TCP -->
+  <param name="Connect_port" type="string" value="/dev/ttyUSB0"/>
+  <param name="BaudRate"  type="string" value="$(arg Baudrate)" />
+  <param name="WaitDataTime" type="double" value="0.05"/>
+  <node pkg="dh_hand_driver" type="hand_controller" name="hand_controller" output="screen">
+  </node>
+
+</launch>
